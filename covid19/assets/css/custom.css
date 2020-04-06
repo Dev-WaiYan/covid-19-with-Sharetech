@@ -1,0 +1,340 @@
+/*-----------------------------------------------------------
+-------------------------------------------------------------
+						Common CSS
+-------------------------------------------------------------
+-----------------------------------------------------------*/
+html{
+	scroll-behavior: smooth;
+}
+div {
+	color: #202020;
+}
+.container {
+	padding-top: 30px;
+}
+#sharetech {
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	color: green;
+	background: white;
+	text-align: center;
+}
+#overlay {
+	width: 100%;
+	height: 100vh;
+	background: black;
+	opacity: 0.7;
+	position: fixed;
+	z-index: 3;
+	display: none;
+	transition: all ease 0.3s;
+}
+/*-----------------------------------------------------------
+-------------------------------------------------------------
+					End of Common CSS
+-------------------------------------------------------------
+-----------------------------------------------------------*/
+
+
+
+
+
+/*-----------------------------------------------------------
+-------------------------------------------------------------
+					Navigation Bar CSS
+-------------------------------------------------------------
+-----------------------------------------------------------*/
+#navigation {
+	width: 100%;
+	background: #9D4158;
+	display: flex;
+	position: fixed;
+	bottom: 0;
+}
+#navigation .navigationItems {
+	flex: 1;
+	text-align: center;
+}
+#navigation .navigationItems a {
+	color: #B5B5B5;
+	text-decoration: none;
+	transition: all ease 0.3s;
+}
+#navigation .navigationItems a:hover {
+	color: white;
+}
+#navigationMenu {
+	width: 100%;
+	background: #9D4158;
+	color: white;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+}
+
+#smallNavigation {
+	width: 90%;
+	position: fixed;
+	left: 5%;
+	bottom: 1000px;
+	z-index: 4;
+	transition: all ease 0.3s;
+}
+#smallNavigation .smallNavigationItems {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	margin: 3px 0 3px 0;
+	text-align: center;
+	background: #FAFAFA;
+	color: #202020;
+	border-radius: 5px;
+}
+#smallNavigation .smallNavigationItems a {
+	color: #202020;
+	display: block;
+	text-decoration: none;
+}
+#smallNavigation .smallNavigationItems:hover {
+	background: #C5C5C5;
+	border-radius: 5px;
+}
+#smallNavigation .smallNavigationItems a:hover {
+	background: #C5C5C5;
+	border-radius: 5px;
+}
+/*-----------------------------------------------------------
+-------------------------------------------------------------
+				End of Navigation Bar CSS
+-------------------------------------------------------------
+-----------------------------------------------------------*/
+
+
+
+
+/*-----------------------------------------------------------
+-------------------------------------------------------------
+				Emergency Phone Number CSS
+-------------------------------------------------------------
+-----------------------------------------------------------*/
+#emergencyPhoneWrap {
+	background: #FFCCDA;
+	padding: 10px;
+	border-radius: 5px;
+}
+#emergencyPhoneTitle {
+	margin-bottom: 30px;
+}
+.phones {
+	width: 100%;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.fix {
+	position: fixed;
+	z-index: 2;
+}
+/*-----------------------------------------------------------
+-------------------------------------------------------------
+			End of Emergency Phone Number CSS
+-------------------------------------------------------------
+-----------------------------------------------------------*/
+
+
+
+
+
+/*-----------------------------------------------------------
+-------------------------------------------------------------
+						Cases Page CSS
+-------------------------------------------------------------
+-----------------------------------------------------------*/
+
+/*Myanmar Case*/
+#myanmarCase {
+	margin-bottom: 30px;
+}
+#myanmarCase table {
+	margin-left: 20px;
+}
+/*End of Myanmar Case*/
+
+/*Global Case*/
+.globalCaseTableTitleNum {
+	width: 7%;
+	display: inline-block;
+	text-align: center;
+}
+.globalCaseTableTitleCountry {
+	width: 20%;
+	display: inline-block;
+	text-align: center;
+}
+.globalCaseTableTitleTotal {
+	width: 25%;
+	display: inline-block;
+	text-align: center;
+}
+.globalCaseTableTitleDeath {
+	width: 20%;
+	display: inline-block;
+	text-align: center;
+}
+.globalCaseTableTitleMore {
+	width: 25%;
+	display: inline-block;
+	text-align: center;
+}
+#globalCaseTableTitle {
+	background: #FFCCDA;
+	height: 45px;
+	line-height: 45px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+.globalCaseTableRow {
+	height: 35px;
+	line-height: 35px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	box-shadow: 2px 2px 2px #C1C1C1;
+	border-radius: 5px;
+}
+.globalCaseTableRow a {
+	color: #9D4158;
+	text-decoration: none;
+	transition: all ease 0.3s;
+}
+.globalCaseTableRow a:hover {
+	color: #474747;
+}
+/*End of Global Case*/
+
+/*-----------------------------------------------------------
+-------------------------------------------------------------
+					End of Cases Page CSS
+-------------------------------------------------------------
+-----------------------------------------------------------*/
+
+
+
+
+
+
+/*-----------------------------------------------------------
+-------------------------------------------------------------
+					Responsive CSS
+-------------------------------------------------------------
+-----------------------------------------------------------*/
+@media only screen and (max-width: 2500px) {
+	/*Common CSS*/
+	div {
+		font-size: 15px;
+	}
+	/*End of Common CSS*/
+
+
+	/*Navigation Bar CSS*/
+	#navigation {
+		height: 50px;
+		line-height: 50px;
+	  	padding: 0 10% 0 10%;
+	}
+	#navigation .navigationItems {
+		flex: 1;
+		text-align: center;
+	}
+	#navigationMenu {
+		display: none;
+	}
+	/*End of Navigation Bar CSS*/
+}
+
+@media only screen and (max-width: 1200px) {
+	/*Common CSS*/
+	div {
+		font-size: 14px;
+	}
+	/*End of Common CSS*/
+
+
+	/*Navigation Bar CSS*/	
+  	#navigation {
+  		height: 45px;
+  		line-height: 45px;
+  		padding: 0 7% 0 7%;
+  	}
+  	#navigation .navigationItems {
+		flex: 1;
+		text-align: center;
+	}
+	/*End of Navigation Bar CSS*/
+}
+
+@media only screen and (max-width: 992px) {
+	/*Common CSS*/
+	div {
+		font-size: 13px;
+	}
+	/*End of Common CSS*/
+
+
+	/*Navigation Bar CSS*/
+  	#navigation {
+  		height: 40px;
+  		line-height: 40px;
+  		padding: 0 2% 0 2%;
+  	}
+  	#navigation .navigationItems {
+		flex: 1;
+		text-align: center;
+	}
+	/*End of Navigation Bar CSS*/
+
+
+	/*Global Case CSS*/
+	.globalCaseTableTitleMore {
+		width: 20%;
+	}
+	/*End of Global Case CSS*/
+}
+
+@media only screen and (max-width: 768px) {
+	/*Common CSS*/
+	div {
+		font-size: 11px;
+	}
+	/*End of Common CSS*/
+
+
+	/*Navigation Bar CSS*/
+ 	#navigation {
+  		display: none;
+  	}
+	#navigationMenu {
+		display: block;
+		height: 40px;
+		line-height: 40px;
+	}
+	/*End of Navigation Bar CSS*/
+
+
+	/*Global Case CSS*/
+	.globalCaseTableTitleMore {
+		width: 20%;
+	}
+	/*End of Global Case CSS*/
+}
+
+@media only screen and (max-width: 567px) {
+	/*Common CSS*/
+	div {
+		font-size: 11px;
+	}
+}
+/*-----------------------------------------------------------
+-------------------------------------------------------------
+				End of Responsive CSS
+-------------------------------------------------------------
+-----------------------------------------------------------*/
