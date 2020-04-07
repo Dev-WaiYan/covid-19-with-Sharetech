@@ -11,6 +11,10 @@ div {
 }
 .container {
 	padding-top: 30px;
+	margin-bottom: 60px;
+}
+p {
+	text-align: justify;
 }
 #sharetech {
 	width: 100%;
@@ -158,6 +162,10 @@ div {
 #myanmarCase table {
 	margin-left: 20px;
 }
+#myanmarCase table tr {
+	height: 30px;
+	line-height: 30px;
+}
 /*End of Myanmar Case*/
 
 /*Global Case*/
@@ -220,7 +228,161 @@ div {
 
 
 
+/*-----------------------------------------------------------
+-------------------------------------------------------------
+					Detail Cases Page CSS
+-------------------------------------------------------------
+-----------------------------------------------------------*/
+/*Myanmar Case*/
+#detailCase {
+	margin-bottom: 30px;
+}
+#detailCase table {
+	margin-left: 20px;
+}
+#detailCase table tr {
+	height: 40px;
+	line-height: 40px;
+}
+/*End of Myanmar Case*/
+#caseDetailsPreviousPage {
+	width: 120px;
+	height: 35px;
+	line-height: 35px;
+	background-color: #9D4158;
+	border-radius: 5px;
+	text-align: center;
+}
+#caseDetailsPreviousPage a {
+	color: #B5B5B5;
+	text-decoration: none;
+	transition: all ease 0.3s;
+}
+#caseDetailsPreviousPage a:hover {
+	color: white;
+}
+/*-----------------------------------------------------------
+-------------------------------------------------------------
+				End of Detail Cases Page CSS
+-------------------------------------------------------------
+-----------------------------------------------------------*/
 
+
+
+
+
+/*-----------------------------------------------------------
+-------------------------------------------------------------
+				Local and Global News Page CSS
+-------------------------------------------------------------
+-----------------------------------------------------------*/
+.newsBoxes {
+	width: 100%;
+	margin: 0px 0 35px 0;
+	overflow: hidden;
+}
+.newsBoxes img {
+	height: 250px;
+}
+.localNewsDetailsAlert {
+	width: 40%;
+	margin-bottom: 10px;
+	display: flex;
+}
+.localNewsDetailsAlert div {
+	flex: 1;
+}
+.newsBoxTitle {
+	margin-bottom: 10px;
+}
+.newBoxImg {
+	text-align: center;
+	line-height: 250px;
+	font-weight: bold;
+}
+.newsBoxes .newsText {
+	height: 114px;
+	overflow: hidden;
+}
+.newsBoxes .newsBoxText {
+	position: relative;
+} 
+.newsBoxes .newsReadmore {
+	width: 200px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background: #9D4158;
+	border-radius: 5px;
+}
+.newsBoxes .newsReadmore a {
+	color: #B5B5B5;
+	text-decoration: none;
+	font-size: 13px;
+}
+.newsBoxes .newsReadmore a:hover {
+	color: white;
+}
+/*-----------------------------------------------------------
+-------------------------------------------------------------
+			End of Local and Global News Page CSS
+-------------------------------------------------------------
+-----------------------------------------------------------*/
+
+
+
+
+/*-----------------------------------------------------------
+-------------------------------------------------------------
+					News Details Page CSS
+-------------------------------------------------------------
+-----------------------------------------------------------*/
+/*New Details*/
+#newsDetailsImage{
+	width: 100%;
+}
+.newsDetailsAlert {
+	width: 25%;
+	display: flex;
+	margin-top: 20px;
+}
+.newsDetailsAlert div {
+	flex: 1;
+}
+.newsDetailsInfo {
+	width: 75%;
+	height: 25px;
+	line-height: 25px;
+	background: #9D4158;
+	color: white;
+	font-size: 12px;
+	text-align: center;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+#newsDetailsPreviousPage {
+	background-color: #9D4158;
+	border-radius: 5px;
+	text-align: center;
+	position: fixed;
+	z-index: 3;
+	right: 9%;
+}
+#newsDetailsPreviousPage a {
+	color: #B5B5B5;
+	text-decoration: none;
+	transition: all ease 0.3s;
+}
+#newsDetailsPreviousPage a:hover {
+	color: white;
+}
+/*End of News Details*/
+
+/*-----------------------------------------------------------
+-------------------------------------------------------------
+					End of News Details Page CSS
+-------------------------------------------------------------
+-----------------------------------------------------------*/
 
 /*-----------------------------------------------------------
 -------------------------------------------------------------
@@ -233,6 +395,12 @@ div {
 		font-size: 15px;
 	}
 	/*End of Common CSS*/
+
+	/*Emergency Phone Number CSS*/
+	#emergencyPhoneWrap {
+		display: block;
+	}
+	/*End of Emergency Phone Number CSS*/
 
 
 	/*Navigation Bar CSS*/
@@ -249,6 +417,33 @@ div {
 		display: none;
 	}
 	/*End of Navigation Bar CSS*/
+
+
+	/*Local and Global News Page CSS*/
+	.newBoxes {
+		height: 250px;
+	}
+	.newsBoxes .newsText {
+		height: 114px;
+	}
+	.newsBoxes .newsReadmore {
+		position: absolute;
+		z-index: 3;
+		right: 20px;
+		top: 210px;
+	}
+	/*End of Local and Global News Page CSS*/
+
+
+
+	/*News Details CSS*/
+	#newsDetailsPreviousPage {
+		bottom: 60px;
+		width: 110px;
+		height: 40px;
+		line-height: 40px;
+	}
+	/*End Of News Details CSS*/
 }
 
 @media only screen and (max-width: 1200px) {
@@ -270,6 +465,27 @@ div {
 		text-align: center;
 	}
 	/*End of Navigation Bar CSS*/
+
+
+
+	/*Local and Global News Page CSS*/
+	.newsBoxes .newsText {
+		height: 85px;
+	}
+	/*End of Local and Global News Page CSS*/
+
+
+
+	/*News Details CSS*/
+	#newsDetailsPreviousPage {
+		bottom: 55px;
+		width: 110px;
+		height: 35px;
+		line-height: 35px;
+	}
+	/*End Of News Details CSS*/
+
+
 }
 
 @media only screen and (max-width: 992px) {
@@ -298,6 +514,28 @@ div {
 		width: 20%;
 	}
 	/*End of Global Case CSS*/
+
+
+
+	/*Local and Global News Page CSS*/
+	.newsBoxes .newsText {
+		height: 100px;
+	}
+	/*End of Local and Global News Page CSS*/
+
+
+
+	/*News Details CSS*/
+	.newsDetailsAlert {
+		width: 35%;
+	}
+	#newsDetailsPreviousPage {
+		bottom: 45px;
+		width: 100px;
+		height: 30px;
+		line-height: 30px;
+	}
+	/*End Of News Details CSS*/
 }
 
 @media only screen and (max-width: 768px) {
@@ -320,11 +558,36 @@ div {
 	/*End of Navigation Bar CSS*/
 
 
+	/*Emergency Phone Number CSS*/
+	#emergencyPhoneWrap {
+		display: none;
+	}
+	/*End of Emergency Phone Number CSS*/
+
+
 	/*Global Case CSS*/
 	.globalCaseTableTitleMore {
 		width: 20%;
 	}
 	/*End of Global Case CSS*/
+
+
+
+	/*Local and Global News Page CSS*/
+	.newBoxes {
+		height: auto;
+	}
+	.newsBoxes .newsReadmore {
+		position: absolute;
+		z-index: 3;
+		right: 27%;
+		top: 140px;
+	}
+	.newsBoxes .newsText {
+		height: 50px;
+		margin-bottom: 30px;
+	}
+	/*End of Local and Global News Page CSS*/
 }
 
 @media only screen and (max-width: 567px) {
@@ -332,9 +595,10 @@ div {
 	div {
 		font-size: 11px;
 	}
+	/*End of Common CSS*/
 }
 /*-----------------------------------------------------------
 -------------------------------------------------------------
 				End of Responsive CSS
 -------------------------------------------------------------
------------------------------------------------------------*/
+-----------------------------------------------------------
