@@ -384,6 +384,73 @@ p {
 -------------------------------------------------------------
 -----------------------------------------------------------*/
 
+
+
+/*-----------------------------------------------------------
+-------------------------------------------------------------
+					What is Sharetech? Page CSS
+-------------------------------------------------------------
+-----------------------------------------------------------*/
+
+.sharetechText{
+	padding: 30px;
+	box-shadow: 0px 3px 2px #C1C1C1;
+	border-radius: 5px;
+}	
+
+/*Sharetech Members Box*/
+.sharetechMembersBox{
+	position: relative;
+	background-color: #FFCCDA;
+	margin-top: 100px;
+	border-radius: 5px;
+	padding: 0 20px 30px 20px;
+}
+.sharetechMembersHeader{
+	position: absolute;
+	top: -20px;
+	left: 40%;
+	width: 20%;
+	height: 40px;
+	background-color: #9D4158;
+	color: white;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 5px;
+}
+/*End of Sharetech Members Box*/
+
+
+/*Sharetech Members Profile*/
+.sharetechMembers {
+	position: relative;
+	background-color: white;
+	border-radius: 5px;
+	margin-bottom: 0px;
+	margin-top: 150px;
+	text-align: center;
+	padding-bottom: 20px;
+	padding-top: 35%;
+	box-shadow: 2px 2px 2px #C1C1C1;
+}
+.profileOfSharetechMembers {
+	width: 60%;
+	position: absolute;
+	right: 20%;
+	top: -50%;
+}
+/*End of Sharetech Members Profile*/
+
+/*-----------------------------------------------------------
+-------------------------------------------------------------
+			End of What is Sharetech? Page CSS
+-------------------------------------------------------------
+-----------------------------------------------------------*/
+
+
+
+
+
 /*-----------------------------------------------------------
 -------------------------------------------------------------
 					Responsive CSS
@@ -444,6 +511,19 @@ p {
 		line-height: 40px;
 	}
 	/*End Of News Details CSS*/
+
+
+
+	/*What is Sharetech? CSS*/
+	.sharetechLogo{
+		width: 80%;
+		margin: 0 auto;
+	}
+	.sharetechText{
+		height: 280px;
+	}
+	/*End of What is Sharetech? CSS*/
+
 }
 
 @media only screen and (max-width: 1200px) {
@@ -485,6 +565,14 @@ p {
 	}
 	/*End Of News Details CSS*/
 
+
+
+	/*What is Sharetech? CSS*/
+	.sharetechLogo{
+		width: 90%;
+		margin: 0 auto;
+	}
+	/*End of What is Sharetech? CSS*/
 
 }
 
@@ -536,6 +624,18 @@ p {
 		line-height: 30px;
 	}
 	/*End Of News Details CSS*/
+
+
+
+	/*What is Sharetech? CSS*/
+	.sharetechLogo{
+		width: 110%;
+	}
+	.sharetechText{
+		height: 220px;
+	}
+	/*End of What is Sharetech? CSS*/
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -588,6 +688,19 @@ p {
 		margin-bottom: 30px;
 	}
 	/*End of Local and Global News Page CSS*/
+
+
+
+	/*What is Sharetech? CSS*/
+	.sharetechLogo{
+		width: 30%;
+		margin: 0 auto;
+	}
+	.sharetechText{
+		height: 220px;
+	}
+	/*End of What is Sharetech? CSS*/
+
 }
 
 @media only screen and (max-width: 567px) {
