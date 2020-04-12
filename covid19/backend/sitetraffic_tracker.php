@@ -8,7 +8,7 @@ include_once('check_api_update.php');
 ini_set('display_errors', 1);
 
 // Call DB connection.
-require('db_conn.php');
+include('db_conn.php');
 
 // Get user public IP.
 $public_ip = "1.1.0.0";
@@ -18,7 +18,7 @@ $actived_date = array();
 $notregistered_ip = true;
 
 // Checking user_ip has actived or not at today.
-$stmt = $conn->prepare("SELECT * FROM site_traffic");
+$stmt = $GLOBALS['conn']->prepare("SELECT * FROM site_traffic");
 $stmt->execute();
 $result = $stmt->fetchAll();
 
