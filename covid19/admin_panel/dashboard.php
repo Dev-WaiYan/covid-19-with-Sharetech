@@ -28,32 +28,54 @@ function showDashboard() {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
 
-    <!-- Bootstrap css -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/css/style_admin.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="../assets/library/bootstrap/css/bootstrap.min.css">
+    <!-- Style_admin CSS -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/style_admin.css">
 </head>
 <body>
     <!-- Main Dashboard Panel -->
     <div class="container" id="main_dashboard">
-        <div class="row my-5">
-            <div class="col-md-12 text-center m-4"><p>Admin Dashboard Panel</p></div>
-            <div class="col-md-3">
-                <div class="bg-info text-white p-5 text-center">
-                    <p>Edit Record For Myanmar.</p>
-                    <button class="btn btn-light" onclick="edit_myanmar_record()">Edit</button>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <br>
+                <h4>Admin Dashboard Panel</h4>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="adminBoxes">
+                    <p>Edit Record For Myanmar</p>
+                    <button class="adminBoxBtns" onclick="edit_myanmar_record()">Edit</button>
                 </div>
             </div>
+
+            <div class="col-md-4">
+                <div class="adminBoxes">
+                    <p>Edit Record For Myanmar</p>
+                    <button class="adminBoxBtns" onclick="edit_myanmar_record()">Edit</button>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="adminBoxes">
+                    <p>Edit Record For Myanmar</p>
+                    <button class="adminBoxBtns" onclick="edit_myanmar_record()">Edit</button>
+                </div>
+            </div>
+
+
         </div>
     </div>
 
 
     <!-- Edit Record Myanmar Dashboard Panel -->
     <div class="container" id="edit_myanmar_panel">
-        <div class="row my-5">
-            <div class="col-md-12 text-center m-4"><p>Edit Myanmar Record Panel</p></div>
-            <div class="col-md-3"></div>
-            <div class="col-md-6">
-                <div class="bg-info text-white p-5 text-center">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h4>Edit Record For Myanmar Cases</h4>
+            </div>
+            <div class="col-lg-6 col-md-8 col-10 myanmarCaseBox">
                     <form action="edited_confirm.php" method="post">
                         <div class="form-group">
                             <label for="new_case">New Case:</label>
@@ -86,12 +108,10 @@ function showDashboard() {
                         </div>
 
                         <div class="form-group">
-                            <button name="edit-confirm" class="btn btn-success" type="submit">Confirm</button>
+                            <button name="edit-confirm" class="myanmarCaseBtn" type="submit">Confirm</button>
                         </div>
                     </form>
-                </div>
             </div>
-            <div class="col-md-3"></div>
         </div>
     </div>
 

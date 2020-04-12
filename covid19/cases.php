@@ -43,27 +43,27 @@ $result = $stmt->fetch();
 				<table border="0">
 					<tr>
 						<td>ဖြစ်ရပ်အသစ်များ</td>
-						<td><?php echo $result['new_case'] ?></td>
+						<td> - <?php echo $result['new_case'] ?></td>
 					</tr>
 					<tr>
 						<td>လတ်တလောဖြစ်ရပ်များ</td>
-						<td><?php echo $result['active_case'] ?></td>
+						<td> - <?php echo $result['active_case'] ?></td>
 					</tr>
 					<tr>
 						<td>စိုးရမ်ရသောလူနာများ</td>
-						<td><?php echo $result['serious_case'] ?></td>
+						<td> - <?php echo $result['serious_case'] ?></td>
 					</tr>
 					<tr>
 						<td>ဖြစ်ပွားပြီး + ဖြစ်ပွားဆဲ စုစုပေါင်း</td>
-						<td><?php echo $result['total_case'] ?></td>
+						<td> - <?php echo $result['total_case'] ?></td>
 					</tr>
 					<tr>
 						<td>သေဆုံးမှုများ</td>
-						<td><?php echo $result['total_death'] ?></td>
+						<td> - <?php echo $result['total_death'] ?></td>
 					</tr>
 					<tr>
 						<td>ပြန်လည်ကောင်းမွန်မှုများ</td>
-						<td><?php echo $result['total_recovered'] ?></td>
+						<td> - <?php echo $result['total_recovered'] ?></td>
 					</tr>
 				</table>
 			</div>
