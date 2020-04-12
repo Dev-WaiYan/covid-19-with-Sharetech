@@ -450,6 +450,42 @@ p {
 
 
 
+/*-- --------------------------------------------------------
+-------------------------------------------------------------
+		Header & Should do and avoid the facts Page CSS
+-------------------------------------------------------------
+-----------------------------------------------------------*/ 
+.nav-pills li a{
+	color: black;
+	box-shadow: 2px 2px 2px #C1C1C1;
+}
+.nav-pills .nav-link.active,.nav-pills .show>.nav-link{
+	color:white;
+	background-color:#9D4158;
+}
+.followTheFacts{
+	color: black;
+	background-color: #FFB5C8;
+	text-align: center;
+	padding: 10px 0;
+	border-radius: 5px;
+}
+.detailsFromThatFact{
+	color: black;
+	background-color: #FFECF1;
+	padding: 50px;
+	font-size: 17px;
+	margin-bottom: 60px;
+	border-radius: 5px;
+}
+/*-- --------------------------------------------------------
+-------------------------------------------------------------
+	End of Header & Should do and avoid the facts Page CSS
+-------------------------------------------------------------
+-----------------------------------------------------------*/ 
+
+
+
 
 /*-----------------------------------------------------------
 -------------------------------------------------------------
