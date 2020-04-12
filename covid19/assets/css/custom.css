@@ -209,12 +209,12 @@ p {
 	box-shadow: 2px 2px 2px #C1C1C1;
 	border-radius: 5px;
 }
-.globalCaseTableRow a {
+.globalCaseTableTitleMore a {
 	color: #9D4158;
 	text-decoration: none;
 	transition: all ease 0.3s;
 }
-.globalCaseTableRow a:hover {
+.globalCaseTableTitleMore a:hover {
 	color: #474747;
 }
 /*End of Global Case*/
@@ -635,7 +635,7 @@ p {
 
 	/*Global Case CSS*/
 	.globalCaseTableTitleMore {
-		width: 20%;
+		width: 25%;
 	}
 	/*End of Global Case CSS*/
 
@@ -703,7 +703,7 @@ p {
 
 	/*Global Case CSS*/
 	.globalCaseTableTitleMore {
-		width: 20%;
+		width: 25%;
 	}
 	/*End of Global Case CSS*/
 
