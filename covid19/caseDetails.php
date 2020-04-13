@@ -17,71 +17,54 @@
 <div class="container">
 	<div class="row">
 		<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+<!-- ------------------------------------------------------------
+-----------------------------------------------------------------
+						Detail Case
+-----------------------------------------------------------------
+------------------------------------------------------------- -->
+<div id="detailCase">
+				<input type="hidden" id="list_id" value=""></span>
+				<h6 id="detailCaseTitle"><b> <span id="detail_country_name"></span> တွင် ဖြစ်ရပ်ပေါင်း ( <span id="country_total_cases"></span> ) ဖြစ်ရပ် ရှိနေပြီဖြစ်သည်။</b></h6>
+
+				<table border="0">
+					<tr>
+						<td>ဖြစ်ရပ်အသစ်များ</td>
+						<td id="detail_new_cases"> - </td>
+					</tr>
+					<tr>
+						<td>လတ်တလောဖြစ်ရပ်များ</td>
+						<td id="detail_active_cases"></td>
+					</tr>
+					<tr>
+						<td>စိုးရမ်ရသောလူနာများ</td>
+						<td id="detail_serious_cases"></td>
+					</tr>
+					<tr>
+						<td>ဖြစ်ပွားပြီး + ဖြစ်ပွားဆဲ စုစုပေါင်း</td>
+						<td id="detail_total_cases"></td>
+					</tr>
+					<tr>
+						<td>သေဆုံးမှုများ</td>
+						<td id="detail_total_deaths"></td>
+					</tr>
+					<tr>
+						<td>ပြန်လည်ကောင်းမွန်မှုများ</td>
+						<td id="detail_total_recovered"></td>
+					</tr>
+				</table>
+
+				<br>
+				<div id="caseDetailsPreviousPage">
+					<a onclick="hideDetails()">ရှေ့စာမျက်နှာသို့</a>
+				</div>
+			</div>
 <!-- --------------------------------------------------------------------
 -------------------------------------------------------------------------
-								News
--------------------------------------------------------------------------
---------------------------------------------------------------------- -->
-			<div id="newsDetailsWrap">
-				<h6><b>ပြည်တွင်းသတင်းများ</b></h6>
-				<hr>
-			</div>
-			<br>
-
-
-
-<!-- -------------------newBox--------------------- -->
-			<div class="newsBoxes card">
-				  <div class="row no-gutters">
-				  	<!-- newsBox Image -->
-				    <div class="col-md-4">
-				      <img src="assets/img/image.jpg" class="card-img" alt="ပုံမရှိပါ!">
-				    </div>
-				  	<!-- End of newsBox Image -->
-
-				    <div class="col-md-8 newsBoxText">
-				      <div class="card-body">
-				      	<!-- newsBox date and time -->
-				      	<div class="localNewsDetailsAlert">
-							<div class="newsDetailsInfo">
-								နောက်ဆုံးရ
-							</div>
-							<div>
-								<b class="newsDetailsDate">April 6,2020</b>
-							</div>
-						</div>
-				      	<!-- End of newsBox date and time -->
-
-				        <header class="newsBoxTitle">
-				        	<b>COVID-19 နောက်ဆုံးရ နေ့လယ်ခင်းသတင်းမျာ:</b>
-				        </header>
-
-				        <!-- newsBox text -->
-				        <div class="newsText">
-				        	<p class="card-text">
-					        	ဗိုင်းရပ်စ်နဲ့ပတ်သက်ပြီးသတင်းအမှားမဖြန့်ဝေဖို့ ကျန်းမာရေးဝန်ကြီးဌာန မေတ္တာရပ်ခံ ၊  မသမာမှုပြုလုပ်တဲ့ စည်ပင်ဝန်ထမ်း ၁၁ ဦးကိုအလုပ်ကနေထုတ်ပယ် ၊ ဗိုင်းရပ်စ်ကြောင့် ချစ်သူများနေ့မှာ ဝယ်သူမရှိဘဲ ဖြစ်နေတဲ့ ဘေဂျင်းက ပန်းဆိုင်တွေ ၊ ဟွန်းဒူးရပ်စ်မှာ ရဲတွေကိုသတ်ပြီး ဒုစရိုက် ဂိုဏ်းခေါင်းဆောင်ကို ကယ်ထုတ်မှုဖြစ်ပွားခဲ့တယ် ဆိုတဲ့နောက်ဆုံးရသတင်းတွေကို တင်ဆက်လိုက်ပါတယ်။ 
-								ဗိုင်းရပ်စ်နဲ့ပတ်သက်ပြီးသတင်းအမှားမဖြန့်ဝေဖို့ ကျန်းမာရေးဝန်ကြီးဌာန မေတ္တာရပ်ခံ ၊  မသမာမှုပြုလုပ်တဲ့ စည်ပင်ဝန်ထမ်း ၁၁ ဦးကိုအလုပ်ကနေထုတ်ပယ် ၊ ဗိုင်းရပ်စ်ကြောင့် ချစ်သူများနေ့မှာ ဝယ်သူမရှိဘဲ ဖြစ်နေတဲ့ ဘေဂျင်းက ပန်းဆိုင်တွေ ၊ ဟွန်းဒူးရပ်စ်မှာ ရဲတွေကိုသတ်ပြီး ဒုစရိုက် ဂိုဏ်းခေါင်းဆောင်ကို ကယ်ထုတ်မှုဖြစ်ပွားခဲ့တယ် 	ဆိုတဲ့နောက်ဆုံးရသတင်းတွေကို တင်ဆက်လိုက်ပါတယ်။ 	
-								ဗိုင်းရပ်စ်နဲ့ပတ်သက်ပြီးသတင်းအမှားမဖြန့်ဝေဖို့ ကျန်းမာရေးဝန်ကြီးဌာန မေတ္တာရပ်ခံ ၊  မသမာမှုပြုလုပ်တဲ့ စည်ပင်ဝန်ထမ်း ၁၁ ဦးကိုအလုပ်ကနေထုတ်ပယ် ၊ ဗိုင်းရပ်စ်ကြောင့် ချစ်သူများနေ့မှာ ဝယ်သူမရှိဘဲ ဖြစ်နေတဲ့ ဘေဂျင်းက ပန်းဆိုင်တွေ ၊ ဟွန်းဒူးရပ်စ်မှာ ရဲတွေကိုသတ်ပြီး ဒုစရိုက် ဂိုဏ်းခေါင်းဆောင်ကို ကယ်ထုတ်မှုဖြစ်ပွားခဲ့တယ် ဆိုတဲ့နောက်ဆုံးရသတင်းတွေကို တင်ဆက်လိုက်ပါတယ်။
-							</p>
-				        </div>
-				        
-				        <!-- End of newsBox text -->
-
-				        <div class="newsReadmore">
-				        	<a href="localNewsdetails.html">ဆက်လက်ဖတ်ရှုရန်</a>
-				        </div>
-				      </div>
-				    </div>
-				  </div>
-			</div>
-<!-- --------------End of newBox--------------------- -->
-
-<!-- --------------------------------------------------------------------
--------------------------------------------------------------------------
-							End Of News
+						End of Detail Case
 -------------------------------------------------------------------------
 --------------------------------------------------------------------- -->
 		</div>
+
 
 
 
@@ -91,7 +74,7 @@
 						Emergency Phone Numbers
 -------------------------------------------------------------------------
 --------------------------------------------------------------------- -->
-		<div class="col-md-3 col-sm-3">
+		<div class="col-md-3 col-sm-3 col-xs-3">
 			<div class="fix" id="emergencyPhoneWrap">
 				<header id="emergencyPhoneTitle"><b>အရေးပေါ်ဆက်သွယ်ရန်ဖုန်းနံပါတ်များ</b></header>
 
@@ -204,5 +187,15 @@
 <script type="text/javascript" src="assets/library/bootstrap/js/bootstrap.min.js"></script>
 <!-- Popper JS -->
 <script type="text/javascript" src="assets/library/bootstrap/js/popper.min.js"></script>
+
+
+<!-- Backend JS -->
+<script src="backend/js/cases_details.js"></script>
+
+<script>
+    // Helper function to show details.
+    showDetails(<?php echo $_GET['lis']; ?>);
+</script>
+
 </body>
 </html>
