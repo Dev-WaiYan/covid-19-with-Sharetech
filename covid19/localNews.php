@@ -1,3 +1,23 @@
+<?php
+
+// Error log
+ini_set('display_errors', 1);
+
+// Call DB connection.
+require('backend/db_conn.php');
+
+// Site Traffic Tracker
+include_once('backend/sitetraffic_tracker.php');
+
+
+// Get local news list from DB.
+$stmt = $conn->prepare("SELECT * FROM local_news");
+$stmt->execute();
+$result = $stmt->fetchAll();
+
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,12 +50,14 @@
 
 
 
+
+<?php foreach($result as $row) { ?>
 <!-- -------------------newBox--------------------- -->
 			<div class="newsBoxes card">
 				  <div class="row no-gutters">
 				  	<!-- newsBox Image -->
 				    <div class="col-md-4">
-				      <img src="assets/img/image.jpg" class="card-img" alt="ပုံမရှိပါ!">
+				      <img src="<?php echo 'localnews_img/' . $row['img'] ?>" class="card-img" alt="ပုံမရှိပါ!">
 				    </div>
 				  	<!-- End of newsBox Image -->
 
@@ -47,34 +69,33 @@
 								နောက်ဆုံးရ
 							</div>
 							<div>
-								<b class="newsDetailsDate">April 6,2020</b>
+								<b class="newsDetailsDate"><?php echo $row['recorded_time'] . ' ' . $row['am_pm'] ?></b>
 							</div>
 						</div>
 				      	<!-- End of newsBox date and time -->
 
 				        <header class="newsBoxTitle">
-				        	<b>COVID-19 နောက်ဆုံးရ နေ့လယ်ခင်းသတင်းမျာ:</b>
+				        	<b><?php echo $row['news_title']; ?></b>
 				        </header>
 
 				        <!-- newsBox text -->
 				        <div class="newsText">
 				        	<p class="card-text">
-					        	ဗိုင်းရပ်စ်နဲ့ပတ်သက်ပြီးသတင်းအမှားမဖြန့်ဝေဖို့ ကျန်းမာရေးဝန်ကြီးဌာန မေတ္တာရပ်ခံ ၊  မသမာမှုပြုလုပ်တဲ့ စည်ပင်ဝန်ထမ်း ၁၁ ဦးကိုအလုပ်ကနေထုတ်ပယ် ၊ ဗိုင်းရပ်စ်ကြောင့် ချစ်သူများနေ့မှာ ဝယ်သူမရှိဘဲ ဖြစ်နေတဲ့ ဘေဂျင်းက ပန်းဆိုင်တွေ ၊ ဟွန်းဒူးရပ်စ်မှာ ရဲတွေကိုသတ်ပြီး ဒုစရိုက် ဂိုဏ်းခေါင်းဆောင်ကို ကယ်ထုတ်မှုဖြစ်ပွားခဲ့တယ် ဆိုတဲ့နောက်ဆုံးရသတင်းတွေကို တင်ဆက်လိုက်ပါတယ်။ 
-								ဗိုင်းရပ်စ်နဲ့ပတ်သက်ပြီးသတင်းအမှားမဖြန့်ဝေဖို့ ကျန်းမာရေးဝန်ကြီးဌာန မေတ္တာရပ်ခံ ၊  မသမာမှုပြုလုပ်တဲ့ စည်ပင်ဝန်ထမ်း ၁၁ ဦးကိုအလုပ်ကနေထုတ်ပယ် ၊ ဗိုင်းရပ်စ်ကြောင့် ချစ်သူများနေ့မှာ ဝယ်သူမရှိဘဲ ဖြစ်နေတဲ့ ဘေဂျင်းက ပန်းဆိုင်တွေ ၊ ဟွန်းဒူးရပ်စ်မှာ ရဲတွေကိုသတ်ပြီး ဒုစရိုက် ဂိုဏ်းခေါင်းဆောင်ကို ကယ်ထုတ်မှုဖြစ်ပွားခဲ့တယ် 	ဆိုတဲ့နောက်ဆုံးရသတင်းတွေကို တင်ဆက်လိုက်ပါတယ်။ 	
-								ဗိုင်းရပ်စ်နဲ့ပတ်သက်ပြီးသတင်းအမှားမဖြန့်ဝေဖို့ ကျန်းမာရေးဝန်ကြီးဌာန မေတ္တာရပ်ခံ ၊  မသမာမှုပြုလုပ်တဲ့ စည်ပင်ဝန်ထမ်း ၁၁ ဦးကိုအလုပ်ကနေထုတ်ပယ် ၊ ဗိုင်းရပ်စ်ကြောင့် ချစ်သူများနေ့မှာ ဝယ်သူမရှိဘဲ ဖြစ်နေတဲ့ ဘေဂျင်းက ပန်းဆိုင်တွေ ၊ ဟွန်းဒူးရပ်စ်မှာ ရဲတွေကိုသတ်ပြီး ဒုစရိုက် ဂိုဏ်းခေါင်းဆောင်ကို ကယ်ထုတ်မှုဖြစ်ပွားခဲ့တယ် ဆိုတဲ့နောက်ဆုံးရသတင်းတွေကို တင်ဆက်လိုက်ပါတယ်။
+					        	<?php echo substr($row['news_body'],0,555) . ' ...'; ?>
 							</p>
 				        </div>
 				        
 				        <!-- End of newsBox text -->
 
 				        <div class="newsReadmore">
-				        	<a href="localNewsdetails.html">ဆက်လက်ဖတ်ရှုရန်</a>
+				        	<a href="<?php echo 'localNewsdetails.php?new_in=' . $row['id'] ?>">ဆက်လက်ဖတ်ရှုရန်</a>
 				        </div>
 				      </div>
 				    </div>
 				  </div>
 			</div>
 <!-- --------------End of newBox--------------------- -->
+<?php } ?>
 
 <!-- --------------------------------------------------------------------
 -------------------------------------------------------------------------
@@ -144,40 +165,40 @@
 
 <nav id="navigation">
 	<div class="navigationItems">
-		<a href="cases.html">ဖြစ်ရပ်များ</a>
+		<a href="cases.php">ဖြစ်ရပ်များ</a>
 	</div>
 	<div class="navigationItems">
-		<a href="localNews.html">ပြည်တွင်းသတင်းများ</a>
+		<a href="localNews.php">ပြည်တွင်းသတင်းများ</a>
 	</div>
 	<div class="navigationItems">
-		<a href="globalNews.html">ပြည်ပသတင်းများ</a>
+		<a href="globalNews.php">ပြည်ပသတင်းများ</a>
 	</div>
 	<div class="navigationItems">
-		<a href="avoidableThings.html">ဆောင်ရန် နှင့် ရှောင်ရန်များ</a>
+		<a href="avoidableThings.php">ဆောင်ရန် နှင့် ရှောင်ရန်များ</a>
 	</div>
 	<div class="navigationItems">
-		<a href="aboutUs.html">Sharetech အကြောင်း</a>
+		<a href="aboutUs.php">Sharetech အကြောင်း</a>
 	</div>
 </nav>
 
 <div id="smallNavigation">
 	<div class="smallNavigationItems">
-		<a href="cases.html">ဖြစ်ရပ်များ</a>
+		<a href="cases.php">ဖြစ်ရပ်များ</a>
 	</div>
 	<div class="smallNavigationItems">
-		<a href="localNews.html">ပြည်တွင်းသတင်းများ</a>
+		<a href="localNews.php">ပြည်တွင်းသတင်းများ</a>
 	</div>
 	<div class="smallNavigationItems">
-		<a href="globalNews.html">ပြည်ပသတင်းများ</a>
+		<a href="globalNews.php">ပြည်ပသတင်းများ</a>
 	</div>
 	<div class="smallNavigationItems">
-		<a href="avoidableThings.html">ဆောင်ရန် နှင့် ရှောင်ရန်များ</a>
+		<a href="avoidableThings.php">ဆောင်ရန် နှင့် ရှောင်ရန်များ</a>
 	</div>
 	<div class="smallNavigationItems">
-		<a href="aboutUs.html">Sharetech အကြောင်း</a>
+		<a href="aboutUs.php">Sharetech အကြောင်း</a>
 	</div>
 	<div class="smallNavigationItems">
-		<a href="emergencyPhone.html">အရေးပေါ်ဖုန်းနံပါတ်များ</a>
+		<a href="emergencyPhone.php">အရေးပေါ်ဖုန်းနံပါတ်များ</a>
 	</div>
 	<div id="smallNavigationCancel" class="smallNavigationItems">
 		Cancel

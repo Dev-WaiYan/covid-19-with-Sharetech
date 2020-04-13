@@ -26,4 +26,30 @@ function setLogMyanmarRecordUpdate() {
     help($log);
 }
 
+
+// Log will save while admin make local news.
+function setLogLocalnewsRecorded() {
+    $log = "Local news recorded at " . date("Y-m-d h:i:sa");
+    help($log);
+}
+
+// Log will save while admin make global news.
+function setLogGlobalnewsRecorded() {
+    $log = "Global news recorded at " . date("Y-m-d h:i:sa");
+    help($log);
+}
+
+// Log will save while admin views system logs.
+function setLogViewSysLogs() {
+    $log = "System logs are viewed at " . date("Y-m-d h:i:sa");
+    help($log);
+}
+
+
+// Log will save while admin views site-traffic.
+function setLogViewSiteTraffic() {
+    $log = "Site traffics are viewed at " . date("Y-m-d h:i:sa");
+    help($log);
+}
+
 ?>

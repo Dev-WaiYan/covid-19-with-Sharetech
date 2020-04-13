@@ -1,6 +1,19 @@
 #edit_myanmar_panel {
     display: none;
 }
+
+#localnews_panel {
+    display: none;
+}
+
+#globalnews_panel {
+    display: none;
+}
+
+#remove_log_alert {
+	display: none;
+}
+
 /*-----------------------------------------------------------
 -------------------------------------------------------------
 						Common CSS

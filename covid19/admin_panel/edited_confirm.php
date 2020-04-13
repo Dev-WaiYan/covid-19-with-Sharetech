@@ -29,8 +29,7 @@ function confirmEdited() {
     $stmt->bindParam(':recorded_time',$recorded_time);
     $stmt->bindParam(':am_pm',$am_pm);
     
-    
-    $recorded_time = date('Y-m-d H:i:s');
+    $recorded_time = date('Y-m-d h:i:s');
     $am_pm = date('a');
     
     if($stmt->execute()) {

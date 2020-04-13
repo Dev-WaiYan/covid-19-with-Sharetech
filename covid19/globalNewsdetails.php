@@ -1,3 +1,28 @@
+<?php
+
+// Error log
+ini_set('display_errors', 1);
+
+// Call DB connection.
+require('backend/db_conn.php');
+
+// Site Traffic Tracker
+include_once('backend/sitetraffic_tracker.php');
+
+
+// Get local news details from DB.
+$stmt = $conn->prepare("SELECT * FROM global_news WHERE id = :id");
+
+$stmt->bindParam(':id',$id);
+
+$id = $_GET['new_in'];
+
+$stmt->execute();
+$result = $stmt->fetch();
+
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,23 +55,21 @@
 
 
 			<div class="newsDetailsBox">
-				<h6><b>COVID-19 နောက်ဆုံးရ နေ့လယ်ခင်းသတင်းမျာ:</b></h6>
-				<img src="assets/img/image.jpg" id="newsDetailsImage" class="img-fluid">
+				<h6><b><?php echo $result['news_title']; ?></b></h6>
+				<img src="<?php echo 'globalnews_img/' . $result['img'] ?>" class="card-img" alt="ပုံမရှိပါ!">
 				<div class="newsDetailsAlert">
 						<div class="newsDetailsInfo">နောက်ဆုံးရ</div>
 						<div>
-							<b class="newsDetailsDate">April 6,2020</b>
+							<b class="newsDetailsDate"><?php echo $result['recorded_time'] . ' ' . $result['am_pm'] ?></b>
 						</div>
 				</div>
 				<hr>
 				<p>
-					ဗိုင်းရပ်စ်နဲ့ပတ်သက်ပြီးသတင်းအမှားမဖြန့်ဝေဖို့ ကျန်းမာရေးဝန်ကြီးဌာန မေတ္တာရပ်ခံ ၊  မသမာမှုပြုလုပ်တဲ့ စည်ပင်ဝန်ထမ်း ၁၁ ဦးကိုအလုပ်ကနေထုတ်ပယ် ၊ ဗိုင်းရပ်စ်ကြောင့် ချစ်သူများနေ့မှာ ဝယ်သူမရှိဘဲ ဖြစ်နေတဲ့ ဘေဂျင်းက ပန်းဆိုင်တွေ ၊ ဟွန်းဒူးရပ်စ်မှာ ရဲတွေကိုသတ်ပြီး ဒုစရိုက် ဂိုဏ်းခေါင်းဆောင်ကို ကယ်ထုတ်မှုဖြစ်ပွားခဲ့တယ် ဆိုတဲ့နောက်ဆုံးရသတင်းတွေကို တင်ဆက်လိုက်ပါတယ်။ 
-					ဗိုင်းရပ်စ်နဲ့ပတ်သက်ပြီးသတင်းအမှားမဖြန့်ဝေဖို့ ကျန်းမာရေးဝန်ကြီးဌာန မေတ္တာရပ်ခံ ၊  မသမာမှုပြုလုပ်တဲ့ စည်ပင်ဝန်ထမ်း ၁၁ ဦးကိုအလုပ်ကနေထုတ်ပယ် ၊ ဗိုင်းရပ်စ်ကြောင့် ချစ်သူများနေ့မှာ ဝယ်သူမရှိဘဲ ဖြစ်နေတဲ့ ဘေဂျင်းက ပန်းဆိုင်တွေ ၊ ဟွန်းဒူးရပ်စ်မှာ ရဲတွေကိုသတ်ပြီး ဒုစရိုက် ဂိုဏ်းခေါင်းဆောင်ကို ကယ်ထုတ်မှုဖြစ်ပွားခဲ့တယ် ဆိုတဲ့နောက်ဆုံးရသတင်းတွေကို တင်ဆက်လိုက်ပါတယ်။ 	
-					ဗိုင်းရပ်စ်နဲ့ပတ်သက်ပြီးသတင်းအမှားမဖြန့်ဝေဖို့ ကျန်းမာရေးဝန်ကြီးဌာန မေတ္တာရပ်ခံ ၊  မသမာမှုပြုလုပ်တဲ့ စည်ပင်ဝန်ထမ်း ၁၁ ဦးကိုအလုပ်ကနေထုတ်ပယ် ၊ ဗိုင်းရပ်စ်ကြောင့် ချစ်သူများနေ့မှာ ဝယ်သူမရှိဘဲ ဖြစ်နေတဲ့ ဘေဂျင်းက ပန်းဆိုင်တွေ ၊ ဟွန်းဒူးရပ်စ်မှာ ရဲတွေကိုသတ်ပြီး ဒုစရိုက် ဂိုဏ်းခေါင်းဆောင်ကို ကယ်ထုတ်မှုဖြစ်ပွားခဲ့တယ် ဆိုတဲ့နောက်ဆုံးရသတင်းတွေကို တင်ဆက်လိုက်ပါတယ်။ 		
+					<?php echo nl2br($result['news_body']); ?>
 				</p>
 			</div>
 			<div id="newsDetailsPreviousPage">
-				<a href="globalNews.html">ရှေ့စာမျက်နှာသို့</a>
+				<a onclick="( function(){ window.history.back(); } ) ();">ရှေ့စာမျက်နှာသို့</a>
 			</div>
 <!-- --------------------------------------------------------------------
 -------------------------------------------------------------------------

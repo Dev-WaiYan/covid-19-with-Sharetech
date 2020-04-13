@@ -6,7 +6,7 @@ date_default_timezone_set('Asia/Yangon');
 // Connection Establish.
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "root";
 
 try {
         $conn = new PDO("mysql:host=$servername;dbname=covid", $username, $password);
