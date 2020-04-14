@@ -125,8 +125,8 @@ function showDashboard() {
                             <button name="edit-confirm" class="myanmarCaseBtn" type="submit">Confirm</button>
                         </div>
 
-                        <div class="form-group">
-                            <a href="" class="form-control btn btn-warning">Discard</a>
+                        <div class="myanmarCaseBtn">
+                            <a href="">Discard</a>
                         </div>
                     </form>
             </div>
@@ -136,14 +136,16 @@ function showDashboard() {
 
     <!-- Local News Dashboard Panel -->
     <div class="container" id="localnews_panel">
-        <div class="row my-5">
-            <div class="col-md-12 text-center my-4">
+        <div class="row">
+            <div class="col-md-12 text-center">
                 <h4>Local News Control Panel</h4>
             </div>
-            <div class="col-md-2"></div>
-            <div class="col-md-8">
-                <div class="text-center">
+            <div class="col-md-8 localGlobal">
+                <div>
                     <form action="localnews_recorded_confirm.php" method="post" enctype="multipart/form-data">
+                        <div id="localImg">
+                            Browse a image...
+                        </div>
                         <div class="form-group">
                             <label for="localnews_title">News Title:</label>
                             <input class="form-control" type="text" name="localnews_title" id="localnews_title" required>
@@ -152,21 +154,20 @@ function showDashboard() {
                             <label for="localnews_body">News Body:</label>
                             <textarea class="form-control" name="localnews_body" id="localnews_body" cols="30" rows="10" required></textarea>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group" id="localImgClick">
                             <label for="localnews_main_photo">Photo Select:</label>
                             <input type="file" name="localnews_main_photo" id="localnews_main_photo" required>
                         </div>
                         <div class="form-group">
-                            <input name="confirm_upload" class="form-control btn btn-primary" type="submit" value="Confirm Upload">
+                            <input name="confirm_upload" class="localGlobalBtn" type="submit" value="Confirm Upload">
                         </div>
 
-                        <div class="form-group">
-                            <a href="" class="form-control btn btn-warning">Discard</a>
+                        <div class="localGlobalBtn">
+                            <a href="">Discard</a>
                         </div>
                     </form>
                 </div>
             </div>
-            <div class="col-md-2"></div>
         </div>
     </div>
 
@@ -174,14 +175,16 @@ function showDashboard() {
 
     <!-- Global News Dashboard Panel -->
     <div class="container" id="globalnews_panel">
-        <div class="row my-5">
-            <div class="col-md-12 text-center my-4">
+        <div class="row">
+            <div class="col-md-12 text-center">
                 <h4>Global News Control Panel</h4>
             </div>
-            <div class="col-md-2"></div>
-            <div class="col-md-8">
-                <div class="text-center">
+            <div class="col-md-8 localGlobal">
+                <div>
                     <form action="globalnews_recorded_confirm.php" method="post" enctype="multipart/form-data">
+                        <div id="globalImg">
+                            Browse a image...
+                        </div>
                         <div class="form-group">
                             <label for="globalnews_title">News Title:</label>
                             <input class="form-control" type="text" name="globalnews_title" id="globalnews_title" required>
@@ -190,26 +193,26 @@ function showDashboard() {
                             <label for="globalnews_body">News Body:</label>
                             <textarea class="form-control" name="globalnews_body" id="globalnews_body" cols="30" rows="10" required></textarea>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group" id="globalImgClick">
                             <label for="globalnews_main_photo">Photo Select:</label>
                             <input type="file" name="globalnews_main_photo" id="globalnews_main_photo" required>
                         </div>
                         <div class="form-group">
-                            <input name="confirm_upload" class="form-control btn btn-primary" type="submit" value="Confirm Upload">
+                            <input name="confirm_upload" class="localGlobalBtn" type="submit" value="Confirm Upload">
                         </div>
 
-                        <div class="form-group">
-                            <a href="" class="form-control btn btn-warning">Discard</a>
+                        <div class="localGlobalBtn">
+                            <a href="">Discard</a>
                         </div>
                     </form>
                 </div>
             </div>
-            <div class="col-md-2"></div>
         </div>
     </div>
 
 
 
+    <script type="text/javascript" src="../assets/js/jquery.js"></script>
     <!-- Admin dashboard JS -->
     <script src="../backend/js/admin_dashboard.js"></script>
 </body>

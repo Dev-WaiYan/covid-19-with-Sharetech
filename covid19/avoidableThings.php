@@ -254,40 +254,40 @@
 
 <nav id="navigation">
 	<div class="navigationItems">
-		<a href="cases.html">ဖြစ်ရပ်များ</a>
+		<a href="cases.php">ဖြစ်ရပ်များ</a>
 	</div>
 	<div class="navigationItems">
-		<a href="localNews.html">ပြည်တွင်းသတင်းများ</a>
+		<a href="localNews.php">ပြည်တွင်းသတင်းများ</a>
 	</div>
 	<div class="navigationItems">
-		<a href="globalNews.html">ပြည်ပသတင်းများ</a>
+		<a href="globalNews.php">ပြည်ပသတင်းများ</a>
 	</div>
 	<div class="navigationItems">
-		<a href="avoidableThings.html">ဆောင်ရန် နှင့် ရှောင်ရန်များ</a>
+		<a href="avoidableThings.php">ဆောင်ရန် နှင့် ရှောင်ရန်များ</a>
 	</div>
 	<div class="navigationItems">
-		<a href="aboutUs.html">Sharetech အကြောင်း</a>
+		<a href="aboutUs.php">Sharetech အကြောင်း</a>
 	</div>
 </nav>
 
 <div id="smallNavigation">
 	<div class="smallNavigationItems">
-		<a href="cases.html">ဖြစ်ရပ်များ</a>
+		<a href="cases.php">ဖြစ်ရပ်များ</a>
 	</div>
 	<div class="smallNavigationItems">
-		<a href="localNews.html">ပြည်တွင်းသတင်းများ</a>
+		<a href="localNews.php">ပြည်တွင်းသတင်းများ</a>
 	</div>
 	<div class="smallNavigationItems">
-		<a href="globalNews.html">ပြည်ပသတင်းများ</a>
+		<a href="globalNews.php">ပြည်ပသတင်းများ</a>
 	</div>
 	<div class="smallNavigationItems">
-		<a href="avoidableThings.html">ဆောင်ရန် နှင့် ရှောင်ရန်များ</a>
+		<a href="avoidableThings.php">ဆောင်ရန် နှင့် ရှောင်ရန်များ</a>
 	</div>
 	<div class="smallNavigationItems">
-		<a href="aboutUs.html">Sharetech အကြောင်း</a>
+		<a href="aboutUs.php">Sharetech အကြောင်း</a>
 	</div>
 	<div class="smallNavigationItems">
-		<a href="emergencyPhone.html">အရေးပေါ်ဖုန်းနံပါတ်များ</a>
+		<a href="emergencyPhone.php">အရေးပေါ်ဖုန်းနံပါတ်များ</a>
 	</div>
 	<div id="smallNavigationCancel" class="smallNavigationItems">
 		Cancel

@@ -18,3 +18,15 @@ function call_globalnews_panel() {
     document.getElementById('localnews_panel').style.display = 'none';
     document.getElementById('globalnews_panel').style.display = 'initial';
 }
+
+$(document).ready(function() {
+
+    $('#localImg').click(function(){
+        $('#localnews_main_photo').click();
+    });
+
+    $('#globalImg').click(function(){
+        $('#globalnews_main_photo').click();
+    });
+
+});
