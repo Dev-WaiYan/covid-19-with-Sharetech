@@ -36,7 +36,7 @@ $result = $stmt->fetchAll();
 
 <div class="container">
 	<div class="row">
-		<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+		<div class="col-lg-9 col-md-9 offset-md-0 col-sm-10 offset-sm-1 col-12">
 <!-- --------------------------------------------------------------------
 -------------------------------------------------------------------------
 								News
@@ -65,9 +65,6 @@ $result = $stmt->fetchAll();
 				      <div class="card-body">
 				      	<!-- newsBox date and time -->
 				      	<div class="localNewsDetailsAlert">
-							<div class="newsDetailsInfo">
-								နောက်ဆုံးရ
-							</div>
 							<div>
 								<b class="newsDetailsDate"><?php echo $row['recorded_time'] . ' ' . $row['am_pm'] ?></b>
 							</div>

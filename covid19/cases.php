@@ -40,7 +40,7 @@ $result = $stmt->fetch();
 						Myanmar Case
 -----------------------------------------------------------------
 ------------------------------------------------------------- -->
-<div id="myanmarCase">
+			<div id="myanmarCase">
 				<h6 id="myanmarCaseTitle"><b>မြန်မာနိုင်ငံတွင် ဖြစ်ရပ်ပေါင်း ( <?php echo $result['total_case'] ?> ) ဖြစ်ရပ် ရှိနေပြီဖြစ်သည်။</b></h6>
 
 				<table border="0">
@@ -115,7 +115,7 @@ $result = $stmt->fetch();
 						Emergency Phone Numbers
 -------------------------------------------------------------------------
 --------------------------------------------------------------------- -->
-		<div class="col-md-3 col-sm-3 col-xs-3">
+		<div class="col-md-3">
 			<div class="fix" id="emergencyPhoneWrap">
 				<header id="emergencyPhoneTitle"><b>အရေးပေါ်ဆက်သွယ်ရန်ဖုန်းနံပါတ်များ</b></header>
 

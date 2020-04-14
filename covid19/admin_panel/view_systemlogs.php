@@ -37,48 +37,54 @@ function showSystemLogs() {
     <title>Admin Panel - System Logs</title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/library/bootstrap/css/bootstrap.min.css">
     <!-- Style_admin CSS -->
     <link rel="stylesheet" type="text/css" href="../assets/css/style_admin.css">
 
 </head>
 <body>
-    <div class="container" id="system_log">
-        <div class="row my-5">
-            <div class="col-md-12 my-5"><h5 class="text-center">System Logs for Admin Panel</h5></div>
-            <div class="col-md-2"></div>
-            <div class="col-md-8">
-                <div class="m-4">
-                    <button class="btn btn-danger" onclick="removeLogs()">Remove Logs</button>
-                    <a class="btn btn-warning ml-5" href="dashboard.php">Back to Dashboard</a>
-                </div>
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th>Log No.</th>
-                            <th>System Logs</th>
-                            <th>Time</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php
-                            $count = 0;
-                            foreach($result as $row) {
-                                $count++;
-                                echo "
-                                    <tr>
-                                        <td>" . $count . "</td>
-                                        <td>" . $row['log'] . "</td>
-                                        <td>" . $row['created_time'] . "</td>
-                                    </tr>
-                                ";
-                            }
-                        ?>
-                    </tbody>
-                    
-                </table>
+    <div class="container systemLog" id="system_log">
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="text-center">System Logs for Admin Panel</h4>
             </div>
-            <div class="col-md-2"></div>
+            <div class="col-md-8 systemLogBox">
+                <div class="m-4">
+                    <button class="systemLogBtn" onclick="removeLogs()">
+                        Remove Logs
+                    </button>
+                    
+                    <a id="backtodash" href="dashboard.php">Back to Dashboard</a>
+                    
+                </div>
+                <div id="logTable">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Log No.</th>
+                                <th>System Logs</th>
+                                <th>Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                                $count = 0;
+                                foreach($result as $row) {
+                                    $count++;
+                                    echo "
+                                        <tr>
+                                            <td>" . $count . "</td>
+                                            <td>" . $row['log'] . "</td>
+                                            <td>" . $row['created_time'] . "</td>
+                                        </tr>
+                                    ";
+                                }
+                            ?>
+                        </tbody>
+                        
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -87,15 +93,17 @@ function showSystemLogs() {
     <div class="container" id="remove_log_alert">
         <div class="row">
             <div class="col-md-3"></div>
-            <div class="col-md-6">
-                <div class="my-5 text-center">
-                    <form class="bg-light p-5" action="remove_syslogs_confirm.php" method="POST">
-                        <p class="text-danger">Please confirm to remove 'System Logs'!</p> <hr>
-                        <input class="form-control btn btn-success" type="submit" name="confirm" value="Yes, Confirm.">
-                        <br><br>
-                        <a class="form-control btn btn-warning" href="">Discard</a>
-                    </form>
-                </div>
+            <div class="card col-md-6 text-center">
+              <div class="card-body">
+                <h5 class="card-title text-danger">Please confirm to remove System Logs!</h5>
+                <hr>
+
+                <form class="bg-light p-5" action="remove_syslogs_confirm.php" method="POST">
+                    <input class="removeBtn" type="submit" name="confirm" value="Yes, Confirm.">
+                    <br><br>
+                    <a href="" class="removeDiscard">Discard</a>
+                </form>
+              </div>
             </div>
             <div class="col-md-3"></div>
         </div>
