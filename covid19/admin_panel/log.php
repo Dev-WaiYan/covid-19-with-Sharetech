@@ -27,13 +27,43 @@ function setLogMyanmarRecordUpdate() {
 }
 
 
-// Log will save while admin make local news.
+// Log will save while admin makes local news.
 function setLogLocalnewsRecorded() {
     $log = "Local news recorded at " . date("Y-m-d h:i:sa");
     help($log);
 }
 
-// Log will save while admin make global news.
+
+// Log will save while admin edits local news.
+function setLogLocalnewsUpdated($newsID) {
+    $log = "Local news updated at " . date("Y-m-d h:i:sa") . ". News ID is -> " . $newsID;
+    help($log);
+} 
+
+
+// Log will save while admin edits local news.
+function setLogLocalnewsDeleted($newsTitle) {
+    $log = "Local news removed at " . date("Y-m-d h:i:sa") . ". News Title is -> " . $newsTitle;
+    help($log);
+}
+
+
+// Log will save while admin edits global news.
+function setLogGlobalnewsUpdated($newsID) {
+    $log = "Global news updated at " . date("Y-m-d h:i:sa") . ". News ID is -> " . $newsID;
+    help($log);
+}
+
+
+// Log will save while admin edits global news.
+function setLogGlobalnewsDeleted($newsTitle) {
+    $log = "Global news removed at " . date("Y-m-d h:i:sa") . ". News Title is -> " . $newsTitle;
+    help($log);
+}
+
+
+
+// Log will save while admin makes global news.
 function setLogGlobalnewsRecorded() {
     $log = "Global news recorded at " . date("Y-m-d h:i:sa");
     help($log);

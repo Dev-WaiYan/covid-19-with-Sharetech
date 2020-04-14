@@ -60,7 +60,26 @@ $result = $stmt->fetch();
 				<div class="newsDetailsAlert">
 						<div class="newsDetailsInfo">နောက်ဆုံးရ</div>
 						<div>
-							<b class="newsDetailsDate"><?php echo $result['recorded_time'] . ' ' . $result['am_pm'] ?></b>
+							<b class="newsDetailsDate">
+							<!-- News Date and Time -->
+								<?php 
+									$unixTime = time();
+									$createdTime = intval( strtotime($result['created_time']) );
+									$diff = $unixTime - $createdTime;
+									
+									if($diff < 60) {
+										echo $diff . " - second ago ";
+									} else if($diff >= 60 && $diff < 3600) {
+										echo intval($diff/60) . "-min ago ";
+									} else if($diff >= 3600 && $diff < 86400) {
+										echo intval($diff/3600) . "-hour ago ";
+									} else {
+										echo $result['recorded_time'] . ' ' . $result['am_pm'] ;
+									}
+								?>
+							<!-- News Date and Time -->
+							</b>
+							<b> (GMT+6:30)</b>
 						</div>
 				</div>
 				<hr>
