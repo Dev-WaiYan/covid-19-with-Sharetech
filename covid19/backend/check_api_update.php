@@ -5,10 +5,10 @@ $file = fopen("backend/json/api_updated_time.json", "r") or die("Unable to open 
 $getTime = fgets($file);
 $diffTime = time() - $getTime;
 
+fclose($file);
+
 // API won't update until 10 minutes after have been updated.
 if($diffTime >= 600) {
     include_once('api_updated.php');
 }
-
-fclose($file);
 ?>

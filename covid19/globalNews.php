@@ -11,7 +11,7 @@ include_once('backend/sitetraffic_tracker.php');
 
 
 // Get global news list from DB.
-$stmt = $conn->prepare("SELECT * FROM global_news");
+$stmt = $conn->prepare("SELECT * FROM global_news ORDER BY id DESC");
 $stmt->execute();
 $result = $stmt->fetchAll();
 
@@ -69,7 +69,26 @@ $result = $stmt->fetchAll();
 								နောက်ဆုံးရ
 							</div>
 							<div>
-								<b class="newsDetailsDate"><?php echo $row['recorded_time'] . ' ' . $row['am_pm'] ?></b>
+								<b class="newsDetailsDate">
+								<!-- News Date and Time -->
+								<?php 
+									$unixTime = time();
+									$createdTime = intval( strtotime($row['created_time']) );
+									$diff = $unixTime - $createdTime;
+									
+									if($diff < 60) {
+										echo $diff . " - second ago ";
+									} else if($diff >= 60 && $diff < 3600) {
+										echo intval($diff/60) . "-min ago ";
+									} else if($diff >= 3600 && $diff < 86400) {
+										echo intval($diff/3600) . "-hour ago ";
+									} else {
+										echo $row['recorded_time'] . ' ' . $row['am_pm'] ;
+									}
+								?>
+								<!-- News Date and Time -->
+								</b>
+								<b> (GMT+6:30)</b>
 							</div>
 						</div>
 				      	<!-- End of newsBox date and time -->

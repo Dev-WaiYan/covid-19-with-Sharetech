@@ -53,14 +53,16 @@ function showDashboard() {
             <div class="col-md-4">
                 <div class="adminBoxes">
                     <p>Local News Panel</p>
-                    <button class="adminBoxBtns" onclick="call_localnews_panel()">Edit</button>
+                    <button class="adminBoxBtns mr-3" onclick="call_localnews_panel()">Add</button>
+                    <a href="localnews_edit_list.php"><button class="adminBoxBtns">Edit</button></a>
                 </div>
             </div>
 
             <div class="col-md-4">
                 <div class="adminBoxes">
                     <p>Global News Panel</p>
-                    <button class="adminBoxBtns" onclick="call_globalnews_panel()">Edit</button>
+                    <button class="adminBoxBtns mr-3" onclick="call_globalnews_panel()">Add</button>
+                    <a href="globalnews_edit_list.php"><button class="adminBoxBtns">Edit</button></a>
                 </div>
             </div>
 
@@ -90,7 +92,7 @@ function showDashboard() {
                 <h4>Edit Record For Myanmar Cases</h4>
             </div>
             <div class="col-lg-6 col-md-8 col-10 myanmarCaseBox">
-                    <form action="edited_confirm.php" method="post">
+                    <form action="myanmar_recorded_confirm.php" method="post">
                         <div class="form-group">
                             <label for="new_case">New Case:</label>
                             <input class="form-control" type="text" name="new_case" id="new_case" required>
