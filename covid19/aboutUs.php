@@ -50,14 +50,9 @@
 			</div>
 			<div class="col-md-8 col-sm-12">
 				<div class="sharetechText">
-					<p>
-						Sharetech ဆိုတာလူငယ်(၇)ယောက်နှင့်ဖွဲ့စည်းထားတဲ့အဖွဲ့ ဖြစ်ကြသည်
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					<p class="">
+						Sharetech ကိုကျွန်တော်တို့ နည်းပညာတက္ကသိုလ်(မှော်ဘီ)မှ ကျောင်းသား ၇ ယောက်နဲ့ ဖွဲ့စည်းထားတဲ့နည်းပညာအဖွဲ့အစည်းတစ်ခုဖြစ်ပြီး ၂၀၁၉ခုနှစ် နှစ်ဆန်းပိုင်းမှာ စတင်ဖွဲ့စည်းခဲ့ကြပါတယ်။ ယခုလိုအချိန်မှာတစ်ထောင့်တစ်နေရာကနေ နိုင်ငံတော်အတွက်အကူအညီဖြစ်အောင် ဒီproject ကိုအကောင်အထည်ဖော်ဖြစ်ခဲ့ကြပါတယ်။ အချိန်နဲ့တပြေးညီ မှန်ကန်တဲ့သတင်းတွေရရှိအောင်လည်း အကောင်းဆုံးကြိုးစားနေကြပါတယ်။ နောက်ပိုင်းတွေမှာလည်း လူသားအကျိုးပြုတဲ့ project တွေ အကောင်အထည်ဖော်ဖို့လည်းကြိုးစားနေကြပါတယ်။
+
 					</p>
 				</div>
 			</div>
@@ -85,14 +80,31 @@
 				<div class="col-lg-3 col-md-4 col-sm-6 offset-sm-0 col-10 offset-1">
 					<div class="sharetechMembers">
 						<div class="profileOfSharetechMembers">
-							<img src="assets/img/image3.jpg" class="img-fluid rounded-circle">
+							<img src="assets/img/image6.jpg" class="img-fluid rounded-circle">
 						</div>
 						<header class="NameOfSharetechMembers">	
-							<b>Nay Htoo Naing</b>
+							<b>Sai Min Pyae Kyaw</b><br>
+							<small><i>Web Developer</i></small>
 						</header>
 						<small>
 							Technological University (Hmawbi)
-							<br>III IT 26
+							<br>
+						</small>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-4 col-sm-6 offset-sm-0 col-10 offset-1">
+					<div class="sharetechMembers">
+						<div class="profileOfSharetechMembers">
+							<img src="assets/img/image4.jpg" class="img-fluid rounded-circle">
+						</div>
+						<header class="NameOfSharetechMembers">	
+							<b>Yel Min Aung</b><br>
+							<small><i>Animator</i></small>
+						</header>
+						<small>
+							Technological University (Hmawbi)
+							<br>
 						</small>
 					</div>
 				</div>
@@ -103,11 +115,12 @@
 							<img src="assets/img/image3.jpg" class="img-fluid rounded-circle">
 						</div>
 						<header class="NameOfSharetechMembers">	
-							<b>Nay Htoo Naing</b>
+							<b>Nay Htoo Naing</b><br>
+							<small><i>Android Developer</i></small>
 						</header>
 						<small>
 							Technological University (Hmawbi)
-							<br>III IT 26
+							<br>
 						</small>
 					</div>
 				</div>
@@ -115,14 +128,15 @@
 				<div class="col-lg-3 col-md-4 col-sm-6 offset-sm-0 col-10 offset-1">
 					<div class="sharetechMembers">
 						<div class="profileOfSharetechMembers">
-							<img src="assets/img/image3.jpg" class="img-fluid rounded-circle">
+							<img src="assets/img/image2.jpg" class="img-fluid rounded-circle">
 						</div>
 						<header class="NameOfSharetechMembers">	
-							<b>Nay Htoo Naing</b>
+							<b>Wai Yan</b><br>
+							<small><i>Web Developer</i></small>
 						</header>
 						<small>
 							Technological University (Hmawbi)
-							<br>III IT 26
+							<br>
 						</small>
 					</div>
 				</div>
@@ -130,14 +144,15 @@
 				<div class="col-lg-3 col-md-4 col-sm-6 offset-sm-0 col-10 offset-1">
 					<div class="sharetechMembers">
 						<div class="profileOfSharetechMembers">
-							<img src="assets/img/image3.jpg" class="img-fluid rounded-circle">
+							<img src="assets/img/image1.jpg" class="img-fluid rounded-circle">
 						</div>
 						<header class="NameOfSharetechMembers">	
-							<b>Nay Htoo Naing</b>
+							<b>Kaung Htet Paing</b><br>
+							<small><i>Graphic Designer</i></small>
 						</header>
 						<small>
 							Technological University (Hmawbi)
-							<br>III IT 26
+							<br>
 						</small>
 					</div>
 				</div>
@@ -145,14 +160,15 @@
 				<div class="col-lg-3 col-md-4 col-sm-6 offset-sm-0 col-10 offset-1">
 					<div class="sharetechMembers">
 						<div class="profileOfSharetechMembers">
-							<img src="assets/img/image3.jpg" class="img-fluid rounded-circle">
+							<img src="assets/img/image7.jpg" class="img-fluid rounded-circle">
 						</div>
 						<header class="NameOfSharetechMembers">	
-							<b>Nay Htoo Naing</b>
+							<b>Hmwe Nant Thar</b><br>
+							<small><i>Front-end Developer</i></small>
 						</header>
 						<small>
 							Technological University (Hmawbi)
-							<br>III IT 26
+							<br>
 						</small>
 					</div>
 				</div>
@@ -160,29 +176,15 @@
 				<div class="col-lg-3 col-md-4 col-sm-6 offset-sm-0 col-10 offset-1">
 					<div class="sharetechMembers">
 						<div class="profileOfSharetechMembers">
-							<img src="assets/img/image3.jpg" class="img-fluid rounded-circle">
+							<img src="assets/img/image5.jpg" class="img-fluid rounded-circle">
 						</div>
 						<header class="NameOfSharetechMembers">	
-							<b>Nay Htoo Naing</b>
+							<b>Aung Phone Win</b><br>
+							<small><i>Network Engineer</i></small>
 						</header>
 						<small>
 							Technological University (Hmawbi)
-							<br>III IT 26
-						</small>
-					</div>
-				</div>
-
-				<div class="col-lg-3 col-md-4 col-sm-6 offset-sm-0 col-10 offset-1">
-					<div class="sharetechMembers">
-						<div class="profileOfSharetechMembers">
-							<img src="assets/img/image3.jpg" class="img-fluid rounded-circle">
-						</div>
-						<header class="NameOfSharetechMembers">	
-							<b>Nay Htoo Naing</b>
-						</header>
-						<small>
-							Technological University (Hmawbi)
-							<br>III IT 26
+							<br>
 						</small>
 					</div>
 				</div>	
@@ -244,7 +246,8 @@
 </div>
 
 <div id="navigationMenu">
-	Menu
+	<div class="text-left"><b>Powered by Sharetech</b></div>
+	<div class="text-right">Menu</div>
 </div>
 <!-- --------------------------------------------------------------------
 -------------------------------------------------------------------------
