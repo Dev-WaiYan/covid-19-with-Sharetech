@@ -202,8 +202,8 @@
 	text-align: center;
 	border: none;
 	border-radius: 5px;
-	background: transparent;
-	color: red;
+	background: #9D4158;
+	color: white;
 	margin-bottom: 20px;
 }
 #backtodash {
@@ -289,5 +289,52 @@
 /*-----------------------------------------------------------
 -------------------------------------------------------------
 				End of Traffic Page CSS
+-------------------------------------------------------------
+-----------------------------------------------------------*/
+
+
+
+
+/*-----------------------------------------------------------
+-------------------------------------------------------------
+			Local Global News Edit Page CSS
+-------------------------------------------------------------
+-----------------------------------------------------------*/
+.localGlobalEdit {
+	margin-top: 30px;
+}
+.localGlobalEditBox {
+	margin: 30px auto;
+	padding: 50px;
+	background: #FFCCDA;
+	border-radius: 5px;
+}
+.localGlobalImg {
+	width: 70%;
+}
+.localGlobalImgBtn {
+	display: none;
+}
+.globalImgClick, .localImgClick {
+	width: 40%;
+	height: 35px;
+	line-height: 35px;
+	background: #9D4158;
+	color: white;
+	border-radius: 5px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.localGlobalEditBtn {
+	width: 30%;
+	height: 35px;
+	background: #9D4158;
+	color: white;
+	border: none;
+	border-radius: 5px;
+}
+/*-----------------------------------------------------------
+-------------------------------------------------------------
+		End of Local Global News Edit Page CSS
 -------------------------------------------------------------
 -----------------------------------------------------------*/

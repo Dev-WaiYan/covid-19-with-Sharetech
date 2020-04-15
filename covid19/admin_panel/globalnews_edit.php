@@ -49,25 +49,31 @@ function showGlobalnewsEditView() {
 
 </head>
 <body>
-    <div class="container systemLog" id="system_log">
+    <div class="container localGlobalEdit">
         <div class="row">
             <div class="col-md-12">
                 <h4 class="text-center">Global News Setting</h4>
             </div>
-            <div class="col-md-8 systemLogBox">
+            <div class="col-md-8 localGlobalEditBox">
                 <div class="m-4">    
-                    <a id="backtodash" href="dashboard.php">Back to Dashboard</a>
-                    <a class="text-primary ml-4" onclick="(function(){ window.history.back(); }) ();">Back to list</a>
-                </div>
-
-                <div class="m-4">    
-                    <button class="my-3 form-control btn btn-success" onclick="update()">Update</button>
-                    <button class="my-3 form-control btn btn-danger" onclick="remove()">Remove</button>
+                    <a class="text-primary" onclick="(function(){ window.history.back(); }) ();">Back to list</a>
                 </div>
 
                 <div>
                     <form id="form" action='globalnews_edited_confirm.php' method="POST" enctype="multipart/form-data">
                         <div id="edit_typebox"></div>
+
+                        <div class="form-group">
+                            <img class="img-thumbnail localGlobalImg" src="../globalnews_img/<?php echo $result['img'] ?>" alt="">
+                        </div>
+
+                        <div class="globalImgClick">
+                            Browse...
+                        </div>
+
+                        <div class="form-group localGlobalImgBtn">
+                            <input type="file" name="globalnews_main_photo" id="globalnews_main_photo">
+                        </div>
 
                         <div class="form-group">
                             <label for="news_title">Current News Title:</label>
@@ -77,24 +83,26 @@ function showGlobalnewsEditView() {
                             <label for="news_body">Current News Body:</label>
                             <textarea class="form-control" name="news_body" id="news_body" cols="30" rows="10"><?php echo $result['news_body'] ?></textarea>
                         </div>
-                        <div class="form-group">
-                            <p>Current News Photo: <img class="ml-5 img-thumbnail" width="200px" height="200px" src="../globalnews_img/<?php echo $result['img'] ?>" alt=""></p>
-                        </div>
-                        <div class="form-group mt-5">
-                            <label for="localnews_main_photo">News Photo : <span class="text-info">(Optional)</span></label>
-                            <input type="file" name="globalnews_main_photo" id="localnews_main_photo">
-                        </div>
+                        
                     </form>
-                    <button class="my-3 form-control btn btn-success" onclick="update()">Update</button>
+                   <div>    
+                        <button class="localGlobalEditBtn" onclick="update()">Update</button>
+                        <button class="localGlobalEditBtn" onclick="remove()">Remove</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
 
-   
-
-
+<script type="text/javascript" src="../assets/js/jquery.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.globalImgClick').click(function() {
+            $('#globalnews_main_photo').click();
+        });
+    });
+</script>
 
 <!-- Scripts -->
 <script>
@@ -110,6 +118,7 @@ function showGlobalnewsEditView() {
         document.getElementById('form').submit(); 
     }
 </script>
+
 
 </body>
 </html>

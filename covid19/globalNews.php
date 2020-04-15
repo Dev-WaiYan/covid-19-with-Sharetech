@@ -132,33 +132,25 @@ $result = $stmt->fetchAll();
 						Emergency Phone Numbers
 -------------------------------------------------------------------------
 --------------------------------------------------------------------- -->
-		<div class="col-md-3 col-sm-3">
+		<div class="col-md-3">
 			<div class="fix" id="emergencyPhoneWrap">
 				<header id="emergencyPhoneTitle"><b>အရေးပေါ်ဆက်သွယ်ရန်ဖုန်းနံပါတ်များ</b></header>
 
 				<div class="phones">
-					<header><b>ရန်ကုန်ပြည်သူ့ဆေးရုံကြီး</b></header>
-					<div>၀၉-၁၂၃၄၅၆၇၈၉</div>
+					<header><b>ပြည်သူ့ကျန်းများရေး အရေးပေါ်တုန့်ပြန်ရေးဌာန</b></header>
+					<div>၀၆၇ ၃၄၂၀၂၆၈</div>
 				</div>
 				<div class="phones">
-					<header><b>ရန်ကုန်ပြည်သူ့ဆေးရုံကြီး</b></header>
-					<div>၀၉-၁၂၃၄၅၆၇၈၉</div>
+					<header><b>ရန်ကုန်တိုင်းဒေသကြီး ပြည်သူ့ကျန်းမားရေး ဦးစီးဌာန</b></header>
+					<div>၀၉ ၄၄၉၀၀၁၂၆၁၊ ၀၉ ၇၉၄၅၁၀၀၅၇</div>
 				</div>
 				<div class="phones">
-					<header><b>ရန်ကုန်ပြည်သူ့ဆေးရုံကြီး</b></header>
-					<div>၀၉-၁၂၃၄၅၆၇၈၉</div>
+					<header><b>မန္တလေးတိုင်းဒေသကြီး ပြည်သူ့ကျန်းမားရေး ဦးစီးဌာန</b></header>
+					<div>၀၉ ၂၀၀၀၃၄၄၊ ၀၉ ၄၃၀၉၉၅၂၆</div>
 				</div>
 				<div class="phones">
-					<header><b>ရန်ကုန်ပြည်သူ့ဆေးရုံကြီး</b></header>
-					<div>၀၉-၁၂၃၄၅၆၇၈၉</div>
-				</div>
-				<div class="phones">
-					<header><b>ရန်ကုန်ပြည်သူ့ဆေးရုံကြီး</b></header>
-					<div>၀၉-၁၂၃၄၅၆၇၈၉</div>
-				</div>
-				<div class="phones">
-					<header><b>ရန်ကုန်ပြည်သူ့ဆေးရုံကြီး</b></header>
-					<div>၀၉-၁၂၃၄၅၆၇၈၉</div>
+					<header><b>Yangon Airport Health Quarantine Unit</b></header>
+					<div>၀၉ ၇၉၉၉၈၃၈၃၃</div>
 				</div>
 				<div id="sharetech"><b>Powered by Sharetech</b></div>
 			</div>
@@ -226,7 +218,8 @@ $result = $stmt->fetchAll();
 </div>
 
 <div id="navigationMenu">
-	Menu
+	<div class="text-left"><b>Powered by Sharetech</b></div>
+	<div class="text-right">Menu</div>
 </div>
 <!-- --------------------------------------------------------------------
 -------------------------------------------------------------------------

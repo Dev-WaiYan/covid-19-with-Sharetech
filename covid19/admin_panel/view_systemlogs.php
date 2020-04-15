@@ -49,14 +49,7 @@ function showSystemLogs() {
                 <h4 class="text-center">System Logs for Admin Panel</h4>
             </div>
             <div class="col-md-8 systemLogBox">
-                <div class="m-4">
-                    <button class="systemLogBtn" onclick="removeLogs()">
-                        Remove Logs
-                    </button>
-                    
-                    <a id="backtodash" href="dashboard.php">Back to Dashboard</a>
-                    
-                </div>
+                
                 <div id="logTable">
                     <table class="table table-striped">
                         <thead>
@@ -83,6 +76,16 @@ function showSystemLogs() {
                         </tbody>
                         
                     </table>
+
+                </div>
+                <br>
+                <div>
+                    <button class="systemLogBtn" onclick="removeLogs()">
+                        Remove Logs
+                    </button>
+                    <br>
+                    <a id="backtodash" href="dashboard.php">Back to Dashboard</a>
+                        
                 </div>
             </div>
         </div>
