@@ -20,6 +20,11 @@ $id = $_GET['new_in'];
 $stmt->execute();
 $result = $stmt->fetch();
 
+// If news does not exist, page will redirect.
+if(empty($result)) {
+	echo "<script>window.history.back()</script>";
+}
+
 ?>
 
 
