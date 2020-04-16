@@ -21,13 +21,8 @@
 						Emergency Phone Numbers
 -------------------------------------------------------------------------
 --------------------------------------------------------------------- -->
-<<<<<<< HEAD
-		<div class="col-md-3">
-			<div class="fix" id="emergencyPhoneWrap">
-=======
 		<div class="col-12">
 			<div class="fix">
->>>>>>> fe02a51cfff30b6e0b1506681494cf8b28762bfd
 				<header id="emergencyPhoneTitle"><b>အရေးပေါ်ဆက်သွယ်ရန်ဖုန်းနံပါတ်များ</b></header>
 
 				<div class="phones">

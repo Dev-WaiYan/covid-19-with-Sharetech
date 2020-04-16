@@ -429,11 +429,7 @@ p {
 -----------------------------------------------------------*/
 @media only screen and (max-width: 2500px) {
 	/*Common CSS*/
-<<<<<<< HEAD
-	div,.detailsFromThatFact,..globalCaseTableTitleCountry {
-=======
 	div,.globalCaseTableTitleCountry, .followTheFacts {
->>>>>>> fe02a51cfff30b6e0b1506681494cf8b28762bfd
 		font-size: 15px;
 	}
 	/*End of Common CSS*/
@@ -628,14 +624,10 @@ p {
 		font-size: 11px;
 	}
 	/*End of Common CSS*/
-<<<<<<< HEAD
-
-=======
 	.detailsFromThatFact {
 		font-size: 11px;
 		margin-bottom: 20px;
 	}
->>>>>>> fe02a51cfff30b6e0b1506681494cf8b28762bfd
 	.globalCaseTableTitleCountry {
 		font-size: 10px;
 	}

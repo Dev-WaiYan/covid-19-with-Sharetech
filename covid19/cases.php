@@ -130,7 +130,6 @@ $result = $stmt->fetch();
 				<div class="phones">
 					<header><b>ပြည်သူ့ကျန်းများရေး အရေးပေါ်တုန့်ပြန်ရေးဌာန</b></header>
 					<div>၀၆၇ ၃၄၂၀၂၆၈</div>
-<<<<<<< HEAD
 				</div>
 				<div class="phones">
 					<header><b>ရန်ကုန်တိုင်းဒေသကြီး ပြည်သူ့ကျန်းမားရေး ဦးစီးဌာန</b></header>
@@ -141,18 +140,6 @@ $result = $stmt->fetch();
 					<div>၀၉ ၂၀၀၀၃၄၄၊ ၀၉ ၄၃၀၉၉၅၂၆</div>
 				</div>
 				<div class="phones">
-=======
-				</div>
-				<div class="phones">
-					<header><b>ရန်ကုန်တိုင်းဒေသကြီး ပြည်သူ့ကျန်းမားရေး ဦးစီးဌာန</b></header>
-					<div>၀၉ ၄၄၉၀၀၁၂၆၁၊ ၀၉ ၇၉၄၅၁၀၀၅၇</div>
-				</div>
-				<div class="phones">
-					<header><b>မန္တလေးတိုင်းဒေသကြီး ပြည်သူ့ကျန်းမားရေး ဦးစီးဌာန</b></header>
-					<div>၀၉ ၂၀၀၀၃၄၄၊ ၀၉ ၄၃၀၉၉၅၂၆</div>
-				</div>
-				<div class="phones">
->>>>>>> fe02a51cfff30b6e0b1506681494cf8b28762bfd
 					<header><b>Yangon Airport Health Quarantine Unit</b></header>
 					<div>၀၉ ၇၉၉၉၈၃၈၃၃</div>
 				</div>

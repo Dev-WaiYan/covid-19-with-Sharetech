@@ -312,11 +312,7 @@
 	display: none;
 }
 .globalImgClick, .localImgClick {
-<<<<<<< HEAD
-	width: 40%;
-=======
 	width: auto;
->>>>>>> fe02a51cfff30b6e0b1506681494cf8b28762bfd
 	height: 35px;
 	line-height: 35px;
 	background: #9D4158;
@@ -326,11 +322,7 @@
 	margin-bottom: 20px;
 }
 .localGlobalEditBtn {
-<<<<<<< HEAD
-	width: 30%;
-=======
 	width: auto;
->>>>>>> fe02a51cfff30b6e0b1506681494cf8b28762bfd
 	height: 35px;
 	background: #9D4158;
 	color: white;
