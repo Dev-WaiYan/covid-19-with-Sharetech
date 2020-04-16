@@ -85,16 +85,24 @@ $result = $stmt->fetch();
 			<div id="globalCase">
 				<h6 id="globalCaseTitle"><b>ကမ္ဘာတစ်ဝှမ်းဖြစ်ရပ်များ</b></h6>
 
-				<div id="globalCaseTableTitle">
-					<span class="globalCaseTableTitleNum"><b>စဉ်</b></span>
-					<span class="globalCaseTableTitleCountry"><b>နိုင်ငံအမည်</b></span>
-					<span class="globalCaseTableTitleTotal"><b>စုစုပေါင်းဖြစ်ရပ်များ</b></span>
-					<span class="globalCaseTableTitleDeath"><b>သေဆုံးမှုများ</b></span>
-				</div>
+				<table class="table col-12">
+					<thead id="caseHead">
+						<tr>
+							<th>စဉ်</th>
+							<th>နိုင်ငံအမည်</th>
+							<th>စုစုပေါင်းဖြစ်ရပ်များ</th>
+							<th>သေဆုံးမှုများ</th>
+							<th></th>
+						</tr>
+					</thead>
+					
 
-				<!-- Country contents are here. -->
+					<tbody id="caseBody">
+						
+					</tbody>
+					
 
-					<!-- Retrieving datas from JS. -->
+				</table>
 
 				<!-- End of country contents. -->
 
@@ -122,6 +130,7 @@ $result = $stmt->fetch();
 				<div class="phones">
 					<header><b>ပြည်သူ့ကျန်းများရေး အရေးပေါ်တုန့်ပြန်ရေးဌာန</b></header>
 					<div>၀၆၇ ၃၄၂၀၂၆၈</div>
+<<<<<<< HEAD
 				</div>
 				<div class="phones">
 					<header><b>ရန်ကုန်တိုင်းဒေသကြီး ပြည်သူ့ကျန်းမားရေး ဦးစီးဌာန</b></header>
@@ -132,6 +141,18 @@ $result = $stmt->fetch();
 					<div>၀၉ ၂၀၀၀၃၄၄၊ ၀၉ ၄၃၀၉၉၅၂၆</div>
 				</div>
 				<div class="phones">
+=======
+				</div>
+				<div class="phones">
+					<header><b>ရန်ကုန်တိုင်းဒေသကြီး ပြည်သူ့ကျန်းမားရေး ဦးစီးဌာန</b></header>
+					<div>၀၉ ၄၄၉၀၀၁၂၆၁၊ ၀၉ ၇၉၄၅၁၀၀၅၇</div>
+				</div>
+				<div class="phones">
+					<header><b>မန္တလေးတိုင်းဒေသကြီး ပြည်သူ့ကျန်းမားရေး ဦးစီးဌာန</b></header>
+					<div>၀၉ ၂၀၀၀၃၄၄၊ ၀၉ ၄၃၀၉၉၅၂၆</div>
+				</div>
+				<div class="phones">
+>>>>>>> fe02a51cfff30b6e0b1506681494cf8b28762bfd
 					<header><b>Yangon Airport Health Quarantine Unit</b></header>
 					<div>၀၉ ၇၉၉၉၈၃၈၃၃</div>
 				</div>

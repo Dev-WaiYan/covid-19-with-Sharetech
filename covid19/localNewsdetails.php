@@ -63,11 +63,9 @@ if(empty($result)) {
 				<h6><b><?php echo $result['news_title']; ?></b></h6>
 				<img src="<?php echo 'localnews_img/' . $result['img'] ?>" class="card-img" alt="ပုံမရှိပါ!">
 				<div class="newsDetailsAlert">
-						<div class="newsDetailsInfo">နောက်ဆုံးရ</div>
-						<div>
-							<b class="newsDetailsDate">
-							<!-- News Date and Time -->
-								<?php 
+					<p class="card-text">
+			        	<small class="text-muted">
+				        	<?php 
 									$unixTime = time();
 									$createdTime = intval( strtotime($result['created_time']) );
 									$diff = $unixTime - $createdTime;
@@ -82,25 +80,24 @@ if(empty($result)) {
 										echo $result['recorded_time'] . ' ' . $result['am_pm'] ;
 									}
 								?>
-							<!-- News Date and Time -->
-							</b>
-							<b> (GMT+6:30)</b>
-						</div>
+				        </small>
+			        </p>
+				</div>
 				</div>
 				<hr>
 				<p>
 					<?php echo nl2br($result['news_body']); ?> 		
 				</p>
-			</div>
-			<div id="newsDetailsPreviousPage">
-				<a onclick="( function(){ window.history.back(); } ) ();">ရှေ့စာမျက်နှာသို့</a>
-			</div>
+		</div>
+		<div id="newsDetailsPreviousPage">
+			<a onclick="( function(){ window.history.back(); } ) ();">ရှေ့စာမျက်နှာသို့</a>
+		</div>
 <!-- --------------------------------------------------------------------
 -------------------------------------------------------------------------
 						End Of News Details
 -------------------------------------------------------------------------
 --------------------------------------------------------------------- -->
-		</div>
+		
 
 
 
@@ -110,6 +107,7 @@ if(empty($result)) {
 						Emergency Phone Numbers
 -------------------------------------------------------------------------
 --------------------------------------------------------------------- -->
+<<<<<<< HEAD
 		<div class="col-md-3">
 			<div class="fix" id="emergencyPhoneWrap">
 				<header id="emergencyPhoneTitle"><b>အရေးပေါ်ဆက်သွယ်ရန်ဖုန်းနံပါတ်များ</b></header>
@@ -131,14 +129,38 @@ if(empty($result)) {
 					<div>၀၉ ၇၉၉၉၈၃၈၃၃</div>
 				</div>
 				<div id="sharetech"><b>Powered by Sharetech</b></div>
+=======
+			<div class="col-md-3">
+				<div class="fix" id="emergencyPhoneWrap">
+					<header id="emergencyPhoneTitle"><b>အရေးပေါ်ဆက်သွယ်ရန်ဖုန်းနံပါတ်များ</b></header>
+
+					<div class="phones">
+						<header><b>ပြည်သူ့ကျန်းများရေး အရေးပေါ်တုန့်ပြန်ရေးဌာန</b></header>
+						<div>၀၆၇ ၃၄၂၀၂၆၈</div>
+					</div>
+					<div class="phones">
+						<header><b>ရန်ကုန်တိုင်းဒေသကြီး ပြည်သူ့ကျန်းမားရေး ဦးစီးဌာန</b></header>
+						<div>၀၉ ၄၄၉၀၀၁၂၆၁၊ ၀၉ ၇၉၄၅၁၀၀၅၇</div>
+					</div>
+					<div class="phones">
+						<header><b>မန္တလေးတိုင်းဒေသကြီး ပြည်သူ့ကျန်းမားရေး ဦးစီးဌာန</b></header>
+						<div>၀၉ ၂၀၀၀၃၄၄၊ ၀၉ ၄၃၀၉၉၅၂၆</div>
+					</div>
+					<div class="phones">
+						<header><b>Yangon Airport Health Quarantine Unit</b></header>
+						<div>၀၉ ၇၉၉၉၈၃၈၃၃</div>
+					</div>
+					<div id="sharetech"><b>Powered by Sharetech</b></div>
+				</div>
+>>>>>>> fe02a51cfff30b6e0b1506681494cf8b28762bfd
 			</div>
-		</div>
 
 <!-- --------------------------------------------------------------------
 -------------------------------------------------------------------------
 					End of Emergency Phone Numbers
 -------------------------------------------------------------------------
 --------------------------------------------------------------------- -->
+		</div>
 	</div>
 </div>
 
