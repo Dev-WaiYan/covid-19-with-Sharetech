@@ -18,8 +18,14 @@ if(!isset($_SESSION['auth'])) {
 
 
 function confirmEdited() {
-    $stmt = $GLOBALS['conn']->prepare("INSERT INTO country_myanmar (new_case, active_case, serious_case, total_case, total_death, total_recovered, recorded_time, am_pm)
-        VALUES (:new_case, :active_case, :serious_case, :total_case, :total_death, :total_recovered, :recorded_time, :am_pm)");
+    global $conn;
+    // $stmt = $GLOBALS['conn']->prepare("INSERT INTO country_myanmar (new_case, active_case, serious_case, total_case, total_death, total_recovered, recorded_time, am_pm)
+    //     VALUES (:new_case, :active_case, :serious_case, :total_case, :total_death, :total_recovered, :recorded_time, :am_pm)");
+
+    $stmt = $conn->prepare("UPDATE country_myanmar SET new_case=:new_case, active_case=:active_case, serious_case=:serious_case,
+     total_case=:total_case, total_death=:total_death, total_recovered=:total_recovered, recorded_time=:recorded_time, am_pm=:am_pm ");
+
+
     $stmt->bindParam(':new_case',$_POST['new_case']);
     $stmt->bindParam(':active_case',$_POST['active_case']);
     $stmt->bindParam(':serious_case',$_POST['serious_case']);

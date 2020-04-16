@@ -29,7 +29,7 @@ function showSiteTraffic() {
     }
 
     // statement for selection box contents.
-    $stmt = $conn->prepare("SELECT DISTINCT active_date FROM site_traffic");
+    $stmt = $conn->prepare("SELECT DISTINCT active_date FROM site_traffic ORDER BY active_date DESC");
     if($stmt->execute()) {
         $traffic_date = $stmt->fetchAll();
     }
