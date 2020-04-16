@@ -21,8 +21,8 @@
 						Emergency Phone Numbers
 -------------------------------------------------------------------------
 --------------------------------------------------------------------- -->
-		<div class="col-md-3">
-			<div class="fix" id="emergencyPhoneWrap">
+		<div class="col-12">
+			<div class="fix">
 				<header id="emergencyPhoneTitle"><b>အရေးပေါ်ဆက်သွယ်ရန်ဖုန်းနံပါတ်များ</b></header>
 
 				<div class="phones">
@@ -62,6 +62,7 @@
 							Navigation Bar
 -------------------------------------------------------------------------
 --------------------------------------------------------------------- -->
+
 <nav id="navigation">
 	<div class="navigationItems">
 		<a href="cases.php">ဖြစ်ရပ်များ</a>
@@ -73,10 +74,10 @@
 		<a href="globalNews.php">ပြည်ပသတင်းများ</a>
 	</div>
 	<div class="navigationItems">
-		<a href="#">ဆောင်ရန် နှင့် ရှောင်ရန်များ</a>
+		<a href="avoidableThings.php">ဆောင်ရန် နှင့် ရှောင်ရန်များ</a>
 	</div>
 	<div class="navigationItems">
-		<a href="#">Sharetech အကြောင်း</a>
+		<a href="aboutUs.php">Sharetech အကြောင်း</a>
 	</div>
 </nav>
 
@@ -91,13 +92,13 @@
 		<a href="globalNews.php">ပြည်ပသတင်းများ</a>
 	</div>
 	<div class="smallNavigationItems">
-		<a href="#">ဆောင်ရန် နှင့် ရှောင်ရန်များ</a>
+		<a href="avoidableThings.php">ဆောင်ရန် နှင့် ရှောင်ရန်များ</a>
 	</div>
 	<div class="smallNavigationItems">
-		<a href="#">Sharetech အကြောင်း</a>
+		<a href="aboutUs.php">Sharetech အကြောင်း</a>
 	</div>
 	<div class="smallNavigationItems">
-		<a href="#">အရေးပေါ်ဖုန်းနံပါတ်များ</a>
+		<a href="emergencyPhone.php">အရေးပေါ်ဖုန်းနံပါတ်များ</a>
 	</div>
 	<div id="smallNavigationCancel" class="smallNavigationItems">
 		Cancel

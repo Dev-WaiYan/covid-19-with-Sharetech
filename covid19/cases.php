@@ -85,16 +85,24 @@ $result = $stmt->fetch();
 			<div id="globalCase">
 				<h6 id="globalCaseTitle"><b>ကမ္ဘာတစ်ဝှမ်းဖြစ်ရပ်များ</b></h6>
 
-				<div id="globalCaseTableTitle">
-					<span class="globalCaseTableTitleNum"><b>စဉ်</b></span>
-					<span class="globalCaseTableTitleCountry"><b>နိုင်ငံအမည်</b></span>
-					<span class="globalCaseTableTitleTotal"><b>စုစုပေါင်းဖြစ်ရပ်များ</b></span>
-					<span class="globalCaseTableTitleDeath"><b>သေဆုံးမှုများ</b></span>
-				</div>
+				<table class="table col-12">
+					<thead id="caseHead">
+						<tr>
+							<th>စဉ်</th>
+							<th>နိုင်ငံအမည်</th>
+							<th>စုစုပေါင်းဖြစ်ရပ်များ</th>
+							<th>သေဆုံးမှုများ</th>
+							<th></th>
+						</tr>
+					</thead>
+					
 
-				<!-- Country contents are here. -->
+					<tbody id="caseBody">
+						
+					</tbody>
+					
 
-					<!-- Retrieving datas from JS. -->
+				</table>
 
 				<!-- End of country contents. -->
 

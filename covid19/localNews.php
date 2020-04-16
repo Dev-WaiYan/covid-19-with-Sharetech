@@ -53,65 +53,53 @@ $result = $stmt->fetchAll();
 
 <?php foreach($result as $row) { ?>
 <!-- -------------------newBox--------------------- -->
-			<div class="newsBoxes card">
-				  <div class="row no-gutters">
-				  	<!-- newsBox Image -->
-				    <div class="col-md-4">
-				      <img src="<?php echo 'localnews_img/' . $row['img'] ?>" class="card-img" alt="ပုံမရှိပါ!">
-				    </div>
-				  	<!-- End of newsBox Image -->
-
-				    <div class="col-md-8 newsBoxText">
-				      <div class="card-body">
-				      	<!-- newsBox date and time -->
-				      	<div class="localNewsDetailsAlert">
-						  	<div class="newsDetailsInfo">
-								နောက်ဆုံးရ
-							</div>
-							<div>
-								<b class="newsDetailsDate">
-								<!-- News Date and Time -->
-									<?php 
-										$unixTime = time();
-										$createdTime = intval( strtotime($row['created_time']) );
-										$diff = $unixTime - $createdTime;
+			<div class="card mb-3">
+			  <div class="row">
+			    <div class="col-md-4 newsImg">
+			      <img src="<?php echo 'localnews_img/' . $row['img'] ?>" class="card-img" alt="...">
+			    </div>
+			    <div class="col-md-8">
+			      <div class="card-body">
+			        <header class="card-title">
+			        	<b>
+			        	<?php 
+			        		if (strlen($row['news_title']) < 300) {
+			        			echo $row['news_title'];
+			        		}else {
+			        			echo substr($row['news_title'],0,300).'...';
+			        		}
+			        	 ?>	
+			        	 </b>	
+			        </header>
+			        <p class="card-text">
+			        	<small class="text-muted">
+				        	<?php 
+								$unixTime = time();
+								$createdTime = intval( strtotime($row['created_time']) );
+								$diff = $unixTime - $createdTime;
 										
-										if($diff < 60) {
-											echo $diff . " - second ago ";
-										} else if($diff >= 60 && $diff < 3600) {
-											echo intval($diff/60) . "-min ago ";
-										} else if($diff >= 3600 && $diff < 86400) {
-											echo intval($diff/3600) . "-hour ago ";
-										} else {
-											echo $row['recorded_time'] . ' ' . $row['am_pm'] ;
-										}
-									?>
-								<!-- News Date and Time -->
-								</b>
-								<b> (GMT+6:30)</b>
-							</div>
-						</div>
-				      	<!-- End of newsBox date and time -->
-
-				        <header class="newsBoxTitle">
-				        	<b><?php echo $row['news_title']; ?></b>
-				        </header>
-
-				        <!-- newsBox text -->
-				        <div class="newsText">
-				        	<p class="card-text">
-					        	<?php echo substr($row['news_body'],0,555) . ' ...'; ?>
-							</p>
-				        </div>
-				        
-				        <!-- End of newsBox text -->
-
-				        <div class="newsReadmore">
-				        	<a href="<?php echo 'localNewsdetails.php?new_in=' . $row['id'] ?>">ဆက်လက်ဖတ်ရှုရန်</a>
-				        </div>
-				      </div>
+								if($diff < 60) {
+									echo $diff . " - second ago ";
+								} else if($diff >= 60 && $diff < 3600) {
+									echo intval($diff/60) . "-min ago ";
+								} else if($diff >= 3600 && $diff < 86400) {
+									echo intval($diff/3600) . "-hour ago ";
+								} else {
+									echo $row['recorded_time'] . ' ' . $row['am_pm'] ;
+								}
+							?>
+				        </small>
+			        </p>
+			        <p class="card-text">
+			        	<?php echo substr($row['news_body'],0,800) . ' ...'; ?></p>
+			        <div class="newsReadmore">
+				       	<a href="<?php echo 'localNewsdetails.php?new_in=' . $row['id'] ?>">
+				       		ဆက်လက်ဖတ်ရှုရန်
+				       </a>
 				    </div>
-				  </div>
+			      </div>
+			    </div>
+			  </div>
 			</div>
 <!-- --------------End of newBox--------------------- -->
 <?php } ?>
