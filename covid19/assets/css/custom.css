@@ -174,53 +174,15 @@ p {
 /*End of Myanmar Case*/
 
 /*Global Case*/
-.globalCaseTableTitleNum {
-	width: 5%;
-	display: inline-block;
+#globalCase table {
 	text-align: center;
 }
-.globalCaseTableTitleCountry {
-	width: 28%;
-	display: inline-block;
-	text-align: center;
-}
-.globalCaseTableTitleTotal {
-	width: 22%;
-	display: inline-block;
-	text-align: center;
-}
-.globalCaseTableTitleDeath {
-	width: 20%;
-	display: inline-block;
-	text-align: center;
-}
-.globalCaseTableTitleMore {
-	width: 25%;
-	display: inline-block;
-	text-align: center;
-}
-#globalCaseTableTitle {
-	background: #FFCCDA;
-	height: 45px;
-	line-height: 45px;
-	margin-bottom: 10px;
-	border-radius: 5px;
-}
-.globalCaseTableRow {
-	height: 35px;
-	line-height: 35px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	box-shadow: 2px 2px 2px #C1C1C1;
-	border-radius: 5px;
-}
-.globalCaseTableTitleMore a {
-	color: #9D4158;
+#globalCase table a {
 	text-decoration: none;
-	transition: all ease 0.3s;
+	color: #9D4158;
 }
-.globalCaseTableTitleMore a:hover {
-	color: #474747;
+#caseHead {
+	background: #FFCCDA;
 }
 /*End of Global Case*/
 
@@ -281,51 +243,21 @@ p {
 				Local and Global News Page CSS
 -------------------------------------------------------------
 -----------------------------------------------------------*/
-.newsBoxes {
-	width: 100%;
-	margin: 0px 0 35px 0;
-	overflow: hidden;
+.newsImg img {
+	height: 100%;
 }
-.newsBoxes img {
-	height: 250px;
-}
-.localNewsDetailsAlert {
-	margin-bottom: 10px;
-	display: flex;
-}
-.localNewsDetailsAlert div {
-	flex: 6;
-}
-.newsBoxTitle {
-	margin-bottom: 10px;
-}
-.newBoxImg {
-	text-align: center;
-	line-height: 250px;
-	font-weight: bold;
-}
-.newsBoxes .newsText {
-	height: 114px;
-	overflow: hidden;
-}
-.newsBoxes .newsBoxText {
-	position: relative;
-} 
-.newsBoxes .newsReadmore {
+.newsReadmore {
 	width: 200px;
 	height: 30px;
 	line-height: 30px;
+	background: #FFCCDA;
 	text-align: center;
-	background: #9D4158;
 	border-radius: 5px;
 }
-.newsBoxes .newsReadmore a {
-	color: #B5B5B5;
+.newsReadmore a {
+	display: block;
+	color: black;
 	text-decoration: none;
-	font-size: 13px;
-}
-.newsBoxes .newsReadmore a:hover {
-	color: white;
 }
 /*-----------------------------------------------------------
 -------------------------------------------------------------
@@ -467,19 +399,18 @@ p {
 	color:white;
 	background-color:#9D4158;
 }
-.followTheFacts{
+.followTheFacts {
 	color: black;
 	background-color: #FFB5C8;
 	text-align: center;
 	padding: 10px 0;
 	border-radius: 5px;
 }
-.detailsFromThatFact{
+.detailsFromThatFact {
 	color: black;
 	background-color: #FFECF1;
 	padding: 50px;
 	font-size: 17px;
-	margin-bottom: 60px;
 	border-radius: 5px;
 }
 /*-- --------------------------------------------------------
@@ -498,11 +429,18 @@ p {
 -----------------------------------------------------------*/
 @media only screen and (max-width: 2500px) {
 	/*Common CSS*/
+<<<<<<< HEAD
 	div,.detailsFromThatFact,..globalCaseTableTitleCountry {
+=======
+	div,.globalCaseTableTitleCountry, .followTheFacts {
+>>>>>>> fe02a51cfff30b6e0b1506681494cf8b28762bfd
 		font-size: 15px;
 	}
 	/*End of Common CSS*/
-
+	.detailsFromThatFact {
+		font-size: 15px;
+		margin-bottom: 50px;
+	}
 	/*Emergency Phone Number CSS*/
 	#emergencyPhoneWrap {
 		display: block;
@@ -568,12 +506,15 @@ p {
 
 @media only screen and (max-width: 1200px) {
 	/*Common CSS*/
-	div,.detailsFromThatFact {
+	div,.followTheFacts {
 		font-size: 14px;
 	}
 	/*End of Common CSS*/
 
-
+	.detailsFromThatFact {
+		font-size: 14px;
+		margin-bottom: 45px;
+	}
 	/*Navigation Bar CSS*/	
   	#navigation {
   		height: 45px;
@@ -618,11 +559,14 @@ p {
 
 @media only screen and (max-width: 992px) {
 	/*Common CSS*/
-	div,.detailsFromThatFact {
+	div,.followTheFacts {
 		font-size: 13px;
 	}
 	/*End of Common CSS*/
-
+	.detailsFromThatFact {
+		font-size: 13px;
+		margin-bottom: 30px;
+	}
 
 	/*Navigation Bar CSS*/
   	#navigation {
@@ -680,11 +624,18 @@ p {
 
 @media only screen and (max-width: 768px) {
 	/*Common CSS*/
-	div,.detailsFromThatFact  {
+	div,.followTheFacts  {
 		font-size: 11px;
 	}
 	/*End of Common CSS*/
+<<<<<<< HEAD
 
+=======
+	.detailsFromThatFact {
+		font-size: 11px;
+		margin-bottom: 20px;
+	}
+>>>>>>> fe02a51cfff30b6e0b1506681494cf8b28762bfd
 	.globalCaseTableTitleCountry {
 		font-size: 10px;
 	}
@@ -748,7 +699,7 @@ p {
 
 @media only screen and (max-width: 567px) {
 	/*Common CSS*/
-	div,.detailsFromThatFact {
+	div,.detailsFromThatFact,.followTheFacts {
 		font-size: 11px;
 	}
 	/*End of Common CSS*/

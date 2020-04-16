@@ -53,7 +53,7 @@
 .loginBtn {
 	background: #9D4158;
 	color: white;
-	width: 20%;
+	width: auto;
 	height: 35px;
 	border: none;
 	border-radius: 5px;
@@ -110,7 +110,6 @@
 	padding: 50px;
 }
 .myanmarCaseBtn {
-	width: 20%;
 	height: 35px;
 	line-height: 35px;
 	text-align: center;
@@ -146,7 +145,6 @@
 	border-radius: 5px;
 }
 .localGlobalBtn {
-	width: 20%;
 	height: 35px;
 	line-height: 35px;
 	text-align: center;
@@ -161,7 +159,7 @@
 	text-decoration: none;
 }
 #localImg, #globalImg {
-	width: 30%;
+	width: auto;
 	height: 40px;
 	line-height: 40px;
 	text-align: center;
@@ -207,8 +205,7 @@
 	margin-bottom: 20px;
 }
 #backtodash {
-	width: 30%;
-	color: grey;
+	width: auto;
 	text-decoration: none;
 }
 #logTable {
@@ -221,7 +218,7 @@
 	margin-top: 30px;
 }
 .removeBtn {
-	width: 30%;
+	width: auto;
 	height: 35px;
 	border: none;
 	border-radius: 5px;
@@ -255,7 +252,6 @@
 	border-radius: 5px;
 }
 .backdash {
-	color: gray;
 	text-decoration: none;
 	margin-top: 30px;
 	display: block;
@@ -275,7 +271,7 @@
 	padding: 50px; 
 }
 .backtraffic {
-	width: 60%;
+	width: auto;
 	height: 35px;
 	line-height: 35px;
 	text-align: center;
@@ -316,7 +312,11 @@
 	display: none;
 }
 .globalImgClick, .localImgClick {
+<<<<<<< HEAD
 	width: 40%;
+=======
+	width: auto;
+>>>>>>> fe02a51cfff30b6e0b1506681494cf8b28762bfd
 	height: 35px;
 	line-height: 35px;
 	background: #9D4158;
@@ -326,7 +326,11 @@
 	margin-bottom: 20px;
 }
 .localGlobalEditBtn {
+<<<<<<< HEAD
 	width: 30%;
+=======
+	width: auto;
+>>>>>>> fe02a51cfff30b6e0b1506681494cf8b28762bfd
 	height: 35px;
 	background: #9D4158;
 	color: white;

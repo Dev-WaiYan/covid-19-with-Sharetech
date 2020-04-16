@@ -52,7 +52,7 @@ function showGlobalnewsList() {
                     <a id="backtodash" href="dashboard.php">Back to Dashboard</a>
                 </div>
                 <div id="logTable">
-                    <table class="table table-striped">
+                    <table class="table">
                         <thead>
                             <tr>
                                 <th>News ID</th>

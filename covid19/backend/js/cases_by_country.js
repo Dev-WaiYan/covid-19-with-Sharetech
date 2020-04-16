@@ -17,15 +17,15 @@ $.getJSON("backend/json/cases_by_country.json", function(json) {
         }
 
         // Set json data to list cases by country.
-        list = document.getElementById('globalCase');
-        list_id = '<span id="lis?' + i + '"></span>'
-        number = '<span class="globalCaseTableTitleNum">' + (count++) + '</span>';
-        country = '<span class="globalCaseTableTitleCountry">' + json.countries_stat[i].country_name + '</span>';
-        total_cases = '<span class="globalCaseTableTitleTotal">' + json.countries_stat[i].cases + '</span>';
-        total_deaths = '<span class="globalCaseTableTitleDeath">' + json.countries_stat[i].deaths + '</span>';
-        btn_details = '<span class="globalCaseTableTitleMore">' + '<a href="caseDetails.php?lis=' + i + '">အသေးစိတ်ကြည့်ရန်</a>' + '</span>';
+        list = document.getElementById('caseBody');
+        list_id = '<tr><td id="lis?' + i + '"></td>'
+        number = '<td class="globalCaseTableTitleNum">' + (count++) + '</td>';
+        country = '<td class="globalCaseTableTitleCountry">' + json.countries_stat[i].country_name + '</td>';
+        total_cases = '<td class="globalCaseTableTitleTotal">' + json.countries_stat[i].cases + '</td>';
+        total_deaths = '<td class="globalCaseTableTitleDeath">' + json.countries_stat[i].deaths + '</td>';
+        btn_details = '<td class="globalCaseTableTitleMore">' + '<a href="caseDetails.php?lis=' + i + '">အသေးစိတ်ကြည့်ရန်</a>' + '</td></tr>';
         
-        list.innerHTML += '<div class="globalCaseTableRow">' + list_id + number + country + total_cases + total_deaths + btn_details + '</div>';
+        list.innerHTML += '<tbody id="caseBody">' + number + country + total_cases + total_deaths + btn_details + '</tbody>';
     
     }
 
